@@ -1,5 +1,5 @@
 const CACHE = 'voie-francaise-v1'
-const ASSETS = ['/', '/index.html', '/manifest.webmanifest', '/icons/icon.svg']
+const ASSETS = ['./', './index.html', './manifest.webmanifest', './icons/icon.svg']
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
