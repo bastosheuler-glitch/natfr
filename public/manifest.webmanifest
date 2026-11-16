@@ -1,7 +1,7 @@
 {
   "name": "Voie Française",
   "short_name": "Voie FR",
-  "description": "Assistant pour la naturalisation française : éligibilité, dossier, entretien, calendrier.",
+  "description": "Simulado pour l’entretien de naturalisation française, basé sur le livret du citoyen.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

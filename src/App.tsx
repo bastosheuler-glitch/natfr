@@ -1,22 +1,19 @@
 import { useState } from 'react'
 import { I18nProvider, LANGS, useI18n } from './i18n'
-import Eligibility from './features/Eligibility'
-import Checklist from './features/Checklist'
 import Interview from './features/Interview'
-import Timeline from './features/Timeline'
+import Learn from './features/Learn'
 
-const TABS = [
-  { id: 'eligibility', key: 'nav.eligibility' },
-  { id: 'checklist', key: 'nav.checklist' },
-  { id: 'interview', key: 'nav.interview' },
-  { id: 'timeline', key: 'nav.timeline' },
-] as const
-
-type TabId = (typeof TABS)[number]['id']
+type Tab = 'learn' | 'quiz'
 
 function Shell() {
   const { lang, setLang, t } = useI18n()
-  const [tab, setTab] = useState<TabId>('eligibility')
+  const [tab, setTab] = useState<Tab>('learn')
+  const [pendingTheme, setPendingTheme] = useState<string | null>(null)
+
+  const trainTheme = (themeId: string) => {
+    setPendingTheme(themeId)
+    setTab('quiz')
+  }
 
   return (
     <div className="app">
@@ -41,22 +38,26 @@ function Shell() {
           </label>
         </div>
         <nav className="tabbar">
-          {TABS.map((tb) => (
-            <button
-              key={tb.id}
-              className={tab === tb.id ? 'tab active' : 'tab'}
-              onClick={() => setTab(tb.id)}
-            >
-              {t(tb.key)}
-            </button>
-          ))}
+          <button
+            className={tab === 'learn' ? 'tab active' : 'tab'}
+            onClick={() => setTab('learn')}
+          >
+            {t('nav.learn')}
+          </button>
+          <button
+            className={tab === 'quiz' ? 'tab active' : 'tab'}
+            onClick={() => setTab('quiz')}
+          >
+            {t('nav.quiz')}
+          </button>
         </nav>
       </header>
       <main className="content">
-        {tab === 'eligibility' && <Eligibility />}
-        {tab === 'checklist' && <Checklist />}
-        {tab === 'interview' && <Interview />}
-        {tab === 'timeline' && <Timeline />}
+        {tab === 'learn' ? (
+          <Learn onTrain={trainTheme} />
+        ) : (
+          <Interview pendingTheme={pendingTheme} onConsume={() => setPendingTheme(null)} />
+        )}
       </main>
       <footer className="app-footer">
         <p>{t('footer.disclaimer')}</p>
