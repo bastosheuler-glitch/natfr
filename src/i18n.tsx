@@ -39,6 +39,7 @@ const translations: Record<Lang, Record<string, string>> = {
     'learn.videosNote':
       'Les vidéos sont hébergées sur YouTube et nécessitent une connexion internet.',
     'learn.train': 'Entraînez-vous sur ce thème',
+    'learn.read': 'Lire',
     'learn.sectionsCount': '{n} parties',
     'learn.videosCount': '{n} vidéos',
     'learn.devise.liberte': 'Liberté',
@@ -70,7 +71,11 @@ const translations: Record<Lang, Record<string, string>> = {
     'interview.again': 'Refaire ce thème',
     'interview.otherTheme': 'Choisir un autre thème',
     'interview.good': 'Très bien ! Vous êtes prêt(e) pour l’entretien.',
+    'interview.excellent': 'Excellent ! Vous maîtrisez ce thème.',
     'interview.keep': 'Continuez à vous préparer pour l’entretien.',
+    'interview.best': 'Record : {score}/{total}',
+    'interview.newRecord': 'Nouveau record ! 🎉',
+    'interview.quit': 'Quitter le simulé',
     'footer.disclaimer':
       'Application indépendante, sans valeur officielle. Règles officielles : service-public.fr.',
   },
@@ -94,6 +99,7 @@ const translations: Record<Lang, Record<string, string>> = {
     'learn.videosNote':
       'Os vídeos são hospedados no YouTube e exigem conexão com a internet.',
     'learn.train': 'Treinar este tema',
+    'learn.read': 'Ler',
     'learn.sectionsCount': '{n} partes',
     'learn.videosCount': '{n} vídeos',
     'learn.devise.liberte': 'Liberdade',
@@ -125,7 +131,11 @@ const translations: Record<Lang, Record<string, string>> = {
     'interview.again': 'Refazer este tema',
     'interview.otherTheme': 'Escolher outro tema',
     'interview.good': 'Muito bem! Você está preparado(a) para a entrevista.',
+    'interview.excellent': 'Excelente! Você domina este tema.',
     'interview.keep': 'Continue se preparando para a entrevista.',
+    'interview.best': 'Recorde: {score}/{total}',
+    'interview.newRecord': 'Novo recorde! 🎉',
+    'interview.quit': 'Sair do simulado',
     'footer.disclaimer':
       'Aplicativo independente, sem valor oficial. Regras oficiais: service-public.fr.',
   },
@@ -149,6 +159,7 @@ const translations: Record<Lang, Record<string, string>> = {
     'learn.videosNote':
       'Videos are hosted on YouTube and require an internet connection.',
     'learn.train': 'Practise this theme',
+    'learn.read': 'Read',
     'learn.sectionsCount': '{n} parts',
     'learn.videosCount': '{n} videos',
     'learn.devise.liberte': 'Liberty',
@@ -180,7 +191,11 @@ const translations: Record<Lang, Record<string, string>> = {
     'interview.again': 'Retake this theme',
     'interview.otherTheme': 'Choose another theme',
     'interview.good': 'Well done! You are ready for the interview.',
+    'interview.excellent': 'Excellent! You have mastered this theme.',
     'interview.keep': 'Keep preparing for the interview.',
+    'interview.best': 'Best score: {score}/{total}',
+    'interview.newRecord': 'New record! 🎉',
+    'interview.quit': 'Leave the mock test',
     'footer.disclaimer':
       'Independent app, not official guidance. Official rules: service-public.fr.',
   },
@@ -204,6 +219,7 @@ const translations: Record<Lang, Record<string, string>> = {
     'learn.videosNote':
       'Los vídeos están alojados en YouTube y requieren conexión a internet.',
     'learn.train': 'Practicar este tema',
+    'learn.read': 'Leer',
     'learn.sectionsCount': '{n} partes',
     'learn.videosCount': '{n} vídeos',
     'learn.devise.liberte': 'Libertad',
@@ -235,7 +251,11 @@ const translations: Record<Lang, Record<string, string>> = {
     'interview.again': 'Repetir este tema',
     'interview.otherTheme': 'Elegir otro tema',
     'interview.good': '¡Muy bien! Estás listo/a para la entrevista.',
+    'interview.excellent': '¡Excelente! Dominas este tema.',
     'interview.keep': 'Sigue preparándote para la entrevista.',
+    'interview.best': 'Récord: {score}/{total}',
+    'interview.newRecord': '¡Nuevo récord! 🎉',
+    'interview.quit': 'Salir del simulacro',
     'footer.disclaimer':
       'Aplicación independiente, sin valor oficial. Reglas oficiales: service-public.fr.',
   },

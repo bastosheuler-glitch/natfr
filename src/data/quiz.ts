@@ -13,6 +13,7 @@ export interface QuizQuestion {
 
 export interface QuizTheme {
   id: string
+  icon: string
   title: L10n
   questions: QuizQuestion[]
 }
@@ -28,6 +29,7 @@ function h(q: L10n, opts: [L10n, L10n, L10n], correct: number, explanation: L10n
 export const THEMES: QuizTheme[] = [
   {
     id: 'histoire',
+    icon: '📜',
     title: {
       fr: 'L’histoire de France',
       pt: 'A história da França',
@@ -275,10 +277,111 @@ export const THEMES: QuizTheme[] = [
           es: 'Charles de Gaulle lanzó el llamamiento del 18 de junio de 1940 y fundó la V República en 1958; se convirtió en su primer presidente.',
         },
       ),
+      h(
+        {
+          fr: 'Quelle héroïne a libéré Orléans en 1429, pendant la guerre de Cent Ans ?',
+          pt: 'Qual heroína libertou Orleães em 1429, durante a Guerra dos Cem Anos?',
+          en: 'Which heroine liberated Orléans in 1429, during the Hundred Years’ War?',
+          es: '¿Qué heroína liberó Orléans en 1429, durante la Guerra de los Cien Años?',
+        },
+        [
+          { fr: 'Jeanne d’Arc', pt: 'Joana d’Arc', en: 'Joan of Arc', es: 'Juana de Arco' },
+          { fr: 'Marianne', pt: 'Marianne', en: 'Marianne', es: 'Marianne' },
+          { fr: 'Marie-Antoinette', pt: 'Maria Antonieta', en: 'Marie-Antoinette', es: 'María Antonieta' },
+        ],
+        0,
+        {
+          fr: 'Jeanne d’Arc, jeune paysanne devenue chef de guerre, fut brûlée en 1431 et canonisée en 1920.',
+          pt: 'Joana d’Arc, jovem camponesa tornada chefe de guerra, foi queimada em 1431 e canonizada em 1920.',
+          en: 'Joan of Arc, a young peasant who became a war leader, was burned in 1431 and canonised in 1920.',
+          es: 'Juana de Arco, joven campesina convertida en jefa de guerra, fue quemada en 1431 y canonizada en 1920.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quel roi de France a été décapité en 1793, pendant la Révolution ?',
+          pt: 'Qual rei da França foi decapitado em 1793, durante a Revolução?',
+          en: 'Which king of France was beheaded in 1793, during the Revolution?',
+          es: '¿Qué rey de Francia fue decapitado en 1793, durante la Revolución?',
+        },
+        [
+          { fr: 'Louis XVI', pt: 'Luís XVI', en: 'Louis XVI', es: 'Luis XVI' },
+          { fr: 'Louis XIV', pt: 'Luís XIV', en: 'Louis XIV', es: 'Luis XIV' },
+          { fr: 'Henri IV', pt: 'Henrique IV', en: 'Henry IV', es: 'Enrique IV' },
+        ],
+        0,
+        {
+          fr: 'Louis XVI est guillotiné le 21 janvier 1793, après l’abolition de la monarchie en 1792.',
+          pt: 'Luís XVI é guilhotinado em 21 de janeiro de 1793, após a abolição da monarquia em 1792.',
+          en: 'Louis XVI was guillotined on 21 January 1793, after the monarchy was abolished in 1792.',
+          es: 'Luis XVI es guillotinado el 21 de enero de 1793, tras la abolición de la monarquía en 1792.',
+        },
+      ),
+      h(
+        {
+          fr: 'En quelle année la Première Guerre mondiale s’est-elle terminée en Europe ?',
+          pt: 'Em que ano a Primeira Guerra Mundial terminou na Europa?',
+          en: 'In which year did the First World War end in Europe?',
+          es: '¿En qué año terminó la Primera Guerra Mundial en Europa?',
+        },
+        [
+          { fr: '1918', pt: '1918', en: '1918', es: '1918' },
+          { fr: '1914', pt: '1914', en: '1914', es: '1914' },
+          { fr: '1939', pt: '1939', en: '1939', es: '1939' },
+        ],
+        0,
+        {
+          fr: 'L’armistice du 11 novembre 1918 met fin à la Première Guerre mondiale.',
+          pt: 'O armistício de 11 de novembro de 1918 põe fim à Primeira Guerra Mundial.',
+          en: 'The armistice of 11 November 1918 ended the First World War.',
+          es: 'El armisticio del 11 de noviembre de 1918 pone fin a la Primera Guerra Mundial.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quel monument est construit à Paris pour l’Exposition universelle de 1889 ?',
+          pt: 'Qual monumento foi construído em Paris para a Exposição Universal de 1889?',
+          en: 'Which monument was built in Paris for the 1889 World’s Fair?',
+          es: '¿Qué monumento fue construido en París para la Exposición Universal de 1889?',
+        },
+        [
+          { fr: 'La tour Eiffel', pt: 'A torre Eiffel', en: 'The Eiffel Tower', es: 'La torre Eiffel' },
+          { fr: 'Le Louvre', pt: 'O Louvre', en: 'The Louvre', es: 'El Louvre' },
+          { fr: 'L’Arc de triomphe', pt: 'O Arco do Triunfo', en: 'The Arc de Triomphe', es: 'El Arco del Triunfo' },
+        ],
+        0,
+        {
+          fr: 'La tour Eiffel, construite en 1889, est devenue le symbole de Paris.',
+          pt: 'A torre Eiffel, construída em 1889, tornou-se o símbolo de Paris.',
+          en: 'The Eiffel Tower, built in 1889, became the symbol of Paris.',
+          es: 'La torre Eiffel, construida en 1889, se convirtió en el símbolo de París.',
+        },
+      ),
+      h(
+        {
+          fr: 'Qui était Victor Hugo ?',
+          pt: 'Quem foi Victor Hugo?',
+          en: 'Who was Victor Hugo?',
+          es: '¿Quién fue Victor Hugo?',
+        },
+        [
+          { fr: 'Un écrivain, auteur des Misérables', pt: 'Um escritor, autor de Os Miseráveis', en: 'A writer, author of Les Misérables', es: 'Un escritor, autor de Los miserables' },
+          { fr: 'Un roi de France', pt: 'Um rei da França', en: 'A king of France', es: 'Un rey de Francia' },
+          { fr: 'Un footballeur', pt: 'Um futebolista', en: 'A footballer', es: 'Un futbolista' },
+        ],
+        0,
+        {
+          fr: 'Victor Hugo (1802-1885), auteur des Misérables, est un grand défenseur des libertés.',
+          pt: 'Victor Hugo (1802-1885), autor de Os Miseráveis, foi um grande defensor das liberdades.',
+          en: 'Victor Hugo (1802-1885), author of Les Misérables, was a great defender of freedoms.',
+          es: 'Victor Hugo (1802-1885), autor de Los miserables, fue un gran defensor de las libertades.',
+        },
+      ),
     ],
   },
   {
     id: 'valeurs',
+    icon: '🇫🇷',
     title: {
       fr: 'Les valeurs et symboles de la République',
       pt: 'Os valores e símbolos da República',
@@ -561,10 +664,111 @@ export const THEMES: QuizTheme[] = [
           es: 'El artículo 2 de la Constitución define la lengua, la bandera, el himno y el lema de la República.',
         },
       ),
+      h(
+        {
+          fr: 'Qui a composé La Marseillaise en 1792 ?',
+          pt: 'Quem compôs a Marselhesa em 1792?',
+          en: 'Who composed La Marseillaise in 1792?',
+          es: '¿Quién compuso La Marsellesa en 1792?',
+        },
+        [
+          { fr: 'Rouget de Lisle', pt: 'Rouget de Lisle', en: 'Rouget de Lisle', es: 'Rouget de Lisle' },
+          { fr: 'Victor Hugo', pt: 'Victor Hugo', en: 'Victor Hugo', es: 'Victor Hugo' },
+          { fr: 'Le général de Gaulle', pt: 'O general de Gaulle', en: 'General de Gaulle', es: 'El general de Gaulle' },
+        ],
+        0,
+        {
+          fr: 'Rouget de Lisle compose La Marseillaise à Strasbourg en 1792 ; elle devient l’hymne national.',
+          pt: 'Rouget de Lisle compõe a Marselhesa em Estrasburgo em 1792; ela se torna o hino nacional.',
+          en: 'Rouget de Lisle composed La Marseillaise in Strasbourg in 1792; it became the national anthem.',
+          es: 'Rouget de Lisle compone La Marsellesa en Estrasburgo en 1792; se convierte en el himno nacional.',
+        },
+      ),
+      h(
+        {
+          fr: 'Où trouve-t-on souvent la devise de la République et le buste de Marianne ?',
+          pt: 'Onde encontramos com frequência o lema da República e o busto de Marianne?',
+          en: 'Where can you often find the Republic’s motto and the bust of Marianne?',
+          es: '¿Dónde se encuentra a menudo el lema de la República y el busto de Marianne?',
+        },
+        [
+          { fr: 'Dans les mairies et les bâtiments publics', pt: 'Nas prefeituras e edifícios públicos', en: 'In town halls and public buildings', es: 'En los ayuntamientos y edificios públicos' },
+          { fr: 'Uniquement dans les musées', pt: 'Apenas nos museus', en: 'Only in museums', es: 'Solo en los museos' },
+          { fr: 'Seulement à l’étranger', pt: 'Somente no exterior', en: 'Only abroad', es: 'Solo en el extranjero' },
+        ],
+        0,
+        {
+          fr: 'La devise et le buste de Marianne ornent les mairies, les écoles et les tribunaux.',
+          pt: 'O lema e o busto de Marianne ornamentam prefeituras, escolas e tribunais.',
+          en: 'The motto and the bust of Marianne adorn town halls, schools and courts.',
+          es: 'El lema y el busto de Marianne adornan ayuntamientos, escuelas y tribunales.',
+        },
+      ),
+      h(
+        {
+          fr: 'Que signifie « fraternité » dans la devise de la République ?',
+          pt: 'O que significa « fraternidade » no lema da República?',
+          en: 'What does “fraternity” mean in the Republic’s motto?',
+          es: '¿Qué significa « fraternidad » en el lema de la República?',
+        },
+        [
+          { fr: 'L’entraide et la solidarité entre les citoyens', pt: 'A ajuda mútua e a solidariedade entre os cidadãos', en: 'Mutual aid and solidarity among citizens', es: 'La ayuda mutua y la solidaridad entre los ciudadanos' },
+          { fr: 'L’obligation d’avoir les mêmes opinions', pt: 'A obrigação de ter as mesmas opiniões', en: 'Having to share the same opinions', es: 'La obligación de tener las mismas opiniones' },
+          { fr: 'Vivre chacun pour soi', pt: 'Viver cada um por si', en: 'Everyone for themselves', es: 'Vivir cada uno por su lado' },
+        ],
+        0,
+        {
+          fr: 'La fraternité invite les citoyens à la solidarité et à l’entraide.',
+          pt: 'A fraternidade convida os cidadãos à solidariedade e à ajuda mútua.',
+          en: 'Fraternity calls on citizens to show solidarity and mutual aid.',
+          es: 'La fraternidad invita a los ciudadanos a la solidaridad y la ayuda mutua.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quel bonnet, symbole de la liberté, est porté par Marianne ?',
+          pt: 'Qual barrete, símbolo da liberdade, é usado por Marianne?',
+          en: 'Which cap, a symbol of liberty, does Marianne wear?',
+          es: '¿Qué gorro, símbolo de la libertad, lleva Marianne?',
+        },
+        [
+          { fr: 'Le bonnet phrygien', pt: 'O barrete frígio', en: 'The Phrygian cap', es: 'El gorro frigio' },
+          { fr: 'Un chapeau haut de forme', pt: 'Um cartola', en: 'A top hat', es: 'Un sombrero de copa' },
+          { fr: 'Un casque de soldat', pt: 'Um capacete de soldado', en: 'A soldier’s helmet', es: 'Un casco de soldado' },
+        ],
+        0,
+        {
+          fr: 'Le bonnet phrygien, porté pendant la Révolution, symbolise la liberté ; il figure sur les pièces et les timbres.',
+          pt: 'O barrete frígio, usado durante a Revolução, simboliza a liberdade; aparece em moedas e selos.',
+          en: 'The Phrygian cap, worn during the Revolution, symbolises liberty; it appears on coins and stamps.',
+          es: 'El gorro frigio, usado durante la Revolución, simboliza la libertad; aparece en monedas y sellos.',
+        },
+      ),
+      h(
+        {
+          fr: 'D’où viennent les couleurs bleu, blanc et rouge du drapeau français ?',
+          pt: 'De onde vêm as cores azul, branco e vermelho da bandeira francesa?',
+          en: 'Where do the blue, white and red colours of the French flag come from?',
+          es: '¿De dónde vienen los colores azul, blanco y rojo de la bandera francesa?',
+        },
+        [
+          { fr: 'Des couleurs de Paris (bleu et rouge) et du roi (blanc)', pt: 'Das cores de Paris (azul e vermelho) e do rei (branco)', en: 'From the colours of Paris (blue and red) and the king (white)', es: 'De los colores de París (azul y rojo) y del rey (blanco)' },
+          { fr: 'Des couleurs de l’Union européenne', pt: 'Das cores da União Europeia', en: 'From the colours of the European Union', es: 'De los colores de la Unión Europea' },
+          { fr: 'Des couleurs du sport français', pt: 'Das cores do esporte francês', en: 'From the colours of French sport', es: 'De los colores del deporte francés' },
+        ],
+        0,
+        {
+          fr: 'Le bleu et le rouge sont les couleurs de Paris, le blanc celle de la monarchie ; le drapeau tricolore naît à la Révolution.',
+          pt: 'O azul e o vermelho são as cores de Paris, o branco a da monarquia; a bandeira tricolor nasce na Revolução.',
+          en: 'Blue and red are the colours of Paris, white that of the monarchy; the tricolour flag was born in the Revolution.',
+          es: 'El azul y el rojo son los colores de París, el blanco el de la monarquía; la bandera tricolor nace en la Revolución.',
+        },
+      ),
     ],
   },
   {
     id: 'institutions',
+    icon: '🏛️',
     title: {
       fr: 'Les institutions et l’Europe',
       pt: 'As instituições e a Europa',
@@ -852,10 +1056,111 @@ export const THEMES: QuizTheme[] = [
           es: 'Francia es miembro fundador de la construcción europea (CECA 1951, Tratado de Roma 1957) y de la Unión Europea.',
         },
       ),
+      h(
+        {
+          fr: 'Qui nomme le Premier ministre en France ?',
+          pt: 'Quem nomeia o primeiro-ministro na França?',
+          en: 'Who appoints the prime minister in France?',
+          es: '¿Quién nombra al primer ministro en Francia?',
+        },
+        [
+          { fr: 'Le président de la République', pt: 'O presidente da República', en: 'The president of the Republic', es: 'El presidente de la República' },
+          { fr: 'Le Sénat', pt: 'O Senado', en: 'The Senate', es: 'El Senado' },
+          { fr: 'Les citoyens, directement', pt: 'Os cidadãos, diretamente', en: 'The citizens, directly', es: 'Los ciudadanos, directamente' },
+        ],
+        0,
+        {
+          fr: 'Le président de la République nomme le Premier ministre, qui forme ensuite son gouvernement.',
+          pt: 'O presidente da República nomeia o primeiro-ministro, que forma depois seu governo.',
+          en: 'The president of the Republic appoints the prime minister, who then forms the government.',
+          es: 'El presidente de la República nombra al primer ministro, que luego forma su gobierno.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle chambre du Parlement est élue au suffrage universel direct ?',
+          pt: 'Qual câmara do Parlamento é eleita por sufrágio universal direto?',
+          en: 'Which chamber of Parliament is elected by direct universal suffrage?',
+          es: '¿Qué cámara del Parlamento es elegida por sufragio universal directo?',
+        },
+        [
+          { fr: 'L’Assemblée nationale', pt: 'A Assembleia Nacional', en: 'The National Assembly', es: 'La Asamblea Nacional' },
+          { fr: 'Le Sénat', pt: 'O Senado', en: 'The Senate', es: 'El Senado' },
+          { fr: 'Le Conseil constitutionnel', pt: 'O Conselho Constitucional', en: 'The Constitutional Council', es: 'El Consejo Constitucional' },
+        ],
+        0,
+        {
+          fr: 'Les députés de l’Assemblée nationale sont élus directement pour 5 ans ; les sénateurs sont élus indirectement.',
+          pt: 'Os deputados da Assembleia Nacional são eleitos diretamente por 5 anos; os senadores são eleitos indiretamente.',
+          en: 'Members of the National Assembly are elected directly for 5 years; senators are elected indirectly.',
+          es: 'Los diputados de la Asamblea Nacional son elegidos directamente por 5 años; los senadores son elegidos indirectamente.',
+        },
+      ),
+      h(
+        {
+          fr: 'Qui est le chef des armées en France ?',
+          pt: 'Quem é o chefe das forças armadas na França?',
+          en: 'Who is the head of the armed forces in France?',
+          es: '¿Quién es el jefe de las fuerzas armadas en Francia?',
+        },
+        [
+          { fr: 'Le président de la République', pt: 'O presidente da República', en: 'The president of the Republic', es: 'El presidente de la República' },
+          { fr: 'Le Premier ministre', pt: 'O primeiro-ministro', en: 'The prime minister', es: 'El primer ministro' },
+          { fr: 'Le ministre de l’Intérieur', pt: 'O ministro do Interior', en: 'The interior minister', es: 'El ministro del Interior' },
+        ],
+        0,
+        {
+          fr: 'Le président de la République est le chef des armées (article 15 de la Constitution).',
+          pt: 'O presidente da República é o chefe das forças armadas (artigo 15 da Constituição).',
+          en: 'The president of the Republic is the head of the armed forces (article 15 of the Constitution).',
+          es: 'El presidente de la República es el jefe de las fuerzas armadas (artículo 15 de la Constitución).',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelles sont les deux chambres du Parlement français ?',
+          pt: 'Quais são as duas câmaras do Parlamento francês?',
+          en: 'What are the two chambers of the French Parliament?',
+          es: '¿Cuáles son las dos cámaras del Parlamento francés?',
+        },
+        [
+          { fr: 'L’Assemblée nationale et le Sénat', pt: 'A Assembleia Nacional e o Senado', en: 'The National Assembly and the Senate', es: 'La Asamblea Nacional y el Senado' },
+          { fr: 'L’Assemblée nationale et le Conseil d’État', pt: 'A Assembleia Nacional e o Consejo de Estado', en: 'The National Assembly and the Council of State', es: 'La Asamblea Nacional y el Consejo de Estado' },
+          { fr: 'Le Sénat et le gouvernement', pt: 'O Senado e o governo', en: 'The Senate and the government', es: 'El Senado y el gobierno' },
+        ],
+        0,
+        {
+          fr: 'Le Parlement comprend l’Assemblée nationale et le Sénat ; les deux chambres examinent et votent les lois.',
+          pt: 'O Parlamento compreende a Assembleia Nacional e o Senado; as duas câmaras examinam e votam as leis.',
+          en: 'Parliament consists of the National Assembly and the Senate; both chambers examine and vote on laws.',
+          es: 'El Parlamento comprende la Asamblea Nacional y el Senado; las dos cámaras examinan y votan las leyes.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quel document fondamental organise les pouvoirs de la Ve République ?',
+          pt: 'Que documento fundamental organiza os poderes da V República?',
+          en: 'Which fundamental document organises the powers of the Fifth Republic?',
+          es: '¿Qué documento fundamental organiza los poderes de la V República?',
+        },
+        [
+          { fr: 'La Constitution de 1958', pt: 'A Constituição de 1958', en: 'The 1958 Constitution', es: 'La Constitución de 1958' },
+          { fr: 'Le Code civil de 1804', pt: 'O Código Civil de 1804', en: 'The 1804 Civil Code', es: 'El Código Civil de 1804' },
+          { fr: 'L’édit de Nantes', pt: 'O Édito de Nantes', en: 'The Edict of Nantes', es: 'El Edicto de Nantes' },
+        ],
+        0,
+        {
+          fr: 'La Constitution du 4 octobre 1958 organise les pouvoirs de la Ve République.',
+          pt: 'A Constituição de 4 de outubro de 1958 organiza os poderes da V República.',
+          en: 'The Constitution of 4 October 1958 organises the powers of the Fifth Republic.',
+          es: 'La Constitución del 4 de octubre de 1958 organiza los poderes de la V República.',
+        },
+      ),
     ],
   },
   {
     id: 'droits',
+    icon: '⚖️',
     title: {
       fr: 'Les droits et devoirs du citoyen',
       pt: 'Os direitos e deveres do cidadão',
@@ -1151,6 +1456,106 @@ export const THEMES: QuizTheme[] = [
           pt: 'Artigo 2.º da Constituição: « A língua da República é o francês. »',
           en: 'Article 2 of the Constitution: "The language of the Republic is French."',
           es: 'Artículo 2 de la Constitución: « La lengua de la República es el francés. »',
+        },
+      ),
+      h(
+        {
+          fr: 'Quel texte de 1948 proclame les droits fondamentaux de tous les êtres humains ?',
+          pt: 'Que texto de 1948 proclama os direitos fundamentais de todos os seres humanos?',
+          en: 'Which 1948 text proclaims the fundamental rights of all human beings?',
+          es: '¿Qué texto de 1948 proclama los derechos fundamentales de todos los seres humanos?',
+        },
+        [
+          { fr: 'La Déclaration universelle des droits de l’homme', pt: 'A Declaração Universal dos Direitos Humanos', en: 'The Universal Declaration of Human Rights', es: 'La Declaración Universal de los Derechos Humanos' },
+          { fr: 'L’édit de Nantes', pt: 'O Édito de Nantes', en: 'The Edict of Nantes', es: 'El Edicto de Nantes' },
+          { fr: 'La loi de 1905', pt: 'A lei de 1905', en: 'The 1905 law', es: 'La ley de 1905' },
+        ],
+        0,
+        {
+          fr: 'Adoptée par l’ONU le 10 décembre 1948, la Déclaration universelle des droits de l’homme inspire les démocraties.',
+          pt: 'Adotada pela ONU em 10 de dezembro de 1948, a Declaração Universal dos Direitos Humanos inspira as democracias.',
+          en: 'Adopted by the UN on 10 December 1948, the Universal Declaration of Human Rights inspires democracies.',
+          es: 'Adoptada por la ONU el 10 de diciembre de 1948, la Declaración Universal de los Derechos Humanos inspira a las democracias.',
+        },
+      ),
+      h(
+        {
+          fr: 'À quel âge les jeunes Français doivent-ils se faire recenser à la mairie ?',
+          pt: 'A que idade os jovens franceses devem se recensear na prefeitura?',
+          en: 'At what age must young French people register at the town hall?',
+          es: '¿A qué edad los jóvenes franceses deben empadronarse en el ayuntamiento?',
+        },
+        [
+          { fr: 'À 16 ans', pt: 'Aos 16 anos', en: 'At 16', es: 'A los 16 años' },
+          { fr: 'À 10 ans', pt: 'Aos 10 anos', en: 'At 10', es: 'A los 10 años' },
+          { fr: 'À 25 ans', pt: 'Aos 25 anos', en: 'At 25', es: 'A los 25 años' },
+        ],
+        0,
+        {
+          fr: 'Le recensement à 16 ans est obligatoire ; il permet la convocation à la JDC et l’inscription électorale à 18 ans.',
+          pt: 'O recenseamento aos 16 anos é obrigatório; permite a convocação para a JDC e a inscrição eleitoral aos 18 anos.',
+          en: 'Registration at 16 is compulsory; it leads to the JDC summons and electoral registration at 18.',
+          es: 'El empadronamiento a los 16 años es obligatorio; permite la citación para la JDC y la inscripción electoral a los 18.',
+        },
+      ),
+      h(
+        {
+          fr: 'Un citoyen français est-il aussi citoyen de l’Union européenne ?',
+          pt: 'Um cidadão francês também é cidadão da União Europeia?',
+          en: 'Is a French citizen also a citizen of the European Union?',
+          es: '¿Un ciudadano francés también es ciudadano de la Unión Europea?',
+        },
+        [
+          { fr: 'Oui, automatiquement', pt: 'Sim, automaticamente', en: 'Yes, automatically', es: 'Sí, automáticamente' },
+          { fr: 'Non, jamais', pt: 'Não, nunca', en: 'No, never', es: 'No, nunca' },
+          { fr: 'Seulement s’il déménage à Bruxelles', pt: 'Somente se mudar para Bruxelas', en: 'Only if they move to Brussels', es: 'Solo si se muda a Bruselas' },
+        ],
+        0,
+        {
+          fr: 'Tout citoyen français est citoyen de l’Union européenne : il peut circuler, travailler et voter aux élections européennes.',
+          pt: 'Todo cidadão francês é cidadão da União Europeia: pode circular, trabalhar e votar nas eleições europeias.',
+          en: 'Every French citizen is an EU citizen: they can travel, work and vote in European elections.',
+          es: 'Todo ciudadano francés es ciudadano de la Unión Europea: puede viajar, trabajar y votar en las elecciones europeas.',
+        },
+      ),
+      h(
+        {
+          fr: 'L’instruction est-elle obligatoire en France ?',
+          pt: 'A escolaridade é obrigatória na França?',
+          en: 'Is schooling compulsory in France?',
+          es: '¿La escolarización es obligatoria en Francia?',
+        },
+        [
+          { fr: 'Oui, de 3 à 16 ans', pt: 'Sim, de 3 a 16 anos', en: 'Yes, from 3 to 16', es: 'Sí, de 3 a 16 años' },
+          { fr: 'Non, l’école est facultative', pt: 'Não, a escola é facultativa', en: 'No, school is optional', es: 'No, la escuela es opcional' },
+          { fr: 'Seulement pour les garçons', pt: 'Somente para os meninos', en: 'Only for boys', es: 'Solo para los niños' },
+        ],
+        0,
+        {
+          fr: 'L’instruction est obligatoire de 3 à 16 ans ; l’école publique est gratuite et laïque.',
+          pt: 'A escolaridade é obrigatória de 3 a 16 anos; a escola pública é gratuita e laica.',
+          en: 'Schooling is compulsory from 3 to 16; public school is free and secular.',
+          es: 'La escolarización es obligatoria de 3 a 16 años; la escuela pública es gratuita y laica.',
+        },
+      ),
+      h(
+        {
+          fr: 'Les femmes et les hommes ont-ils les mêmes droits en France ?',
+          pt: 'As mulheres e os homens têm os mesmos direitos na França?',
+          en: 'Do women and men have the same rights in France?',
+          es: '¿Las mujeres y los hombres tienen los mismos derechos en Francia?',
+        },
+        [
+          { fr: 'Oui, l’égalité est garantie par la loi', pt: 'Sim, a igualdade é garantida por lei', en: 'Yes, equality is guaranteed by law', es: 'Sí, la igualdad está garantizada por la ley' },
+          { fr: 'Non, jamais', pt: 'Não, nunca', en: 'No, never', es: 'No, nunca' },
+          { fr: 'Seulement au travail', pt: 'Somente no trabalho', en: 'Only at work', es: 'Solo en el trabajo' },
+        ],
+        0,
+        {
+          fr: 'L’égalité entre les femmes et les hommes est un principe garanti par la Constitution et les lois.',
+          pt: 'A igualdade entre mulheres e homens é um princípio garantido pela Constituição e pelas leis.',
+          en: 'Equality between women and men is a principle guaranteed by the Constitution and the laws.',
+          es: 'La igualdad entre mujeres y hombres es un principio garantizado por la Constitución y las leyes.',
         },
       ),
     ],
