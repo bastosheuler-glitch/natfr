@@ -302,6 +302,15 @@ export const LESSONS: Lesson[] = [
           es: '¿Qué es el 14 de Julio?',
         },
       },
+      {
+        youtubeId: 'p39Ujb2fz9s',
+        title: {
+          fr: 'C’est quoi, la fraternité ?',
+          pt: 'O que é a fraternidade?',
+          en: 'What is fraternity?',
+          es: '¿Qué es la fraternidad?',
+        },
+      },
     ],
   },
   {
@@ -408,6 +417,24 @@ export const LESSONS: Lesson[] = [
           pt: 'O que é a democracia?',
           en: 'What is democracy?',
           es: '¿Qué es la democracia?',
+        },
+      },
+      {
+        youtubeId: 'IGAOnHbULZQ',
+        title: {
+          fr: 'C’est quoi la Ve République ?',
+          pt: 'O que é a V República?',
+          en: 'What is the Fifth Republic?',
+          es: '¿Qué es la V República?',
+        },
+      },
+      {
+        youtubeId: 'okZBvGSpmQw',
+        title: {
+          fr: 'C’est quoi l’Assemblée nationale ?',
+          pt: 'O que é a Assembleia Nacional?',
+          en: 'What is the National Assembly?',
+          es: '¿Qué es la Asamblea Nacional?',
         },
       },
     ],
@@ -530,6 +557,24 @@ export const LESSONS: Lesson[] = [
           pt: 'O que é viver juntos?',
           en: 'What is living together?',
           es: '¿Qué es vivir juntos?',
+        },
+      },
+      {
+        youtubeId: 'mzky0ylhgCo',
+        title: {
+          fr: 'C’est quoi la Déclaration universelle des droits de l’homme ?',
+          pt: 'O que é a Declaração Universal dos Direitos Humanos?',
+          en: 'What is the Universal Declaration of Human Rights?',
+          es: '¿Qué es la Declaración Universal de los Derechos Humanos?',
+        },
+      },
+      {
+        youtubeId: 'nAJsnSpM5ro',
+        title: {
+          fr: 'C’est quoi les élections régionales ?',
+          pt: 'O que são as eleições regionais?',
+          en: 'What are regional elections?',
+          es: '¿Qué son las elecciones regionales?',
         },
       },
     ],

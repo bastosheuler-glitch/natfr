@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { fmt, useI18n } from '../i18n'
 import { LESSONS, type Lesson } from '../data/lessons'
+import { THEMES } from '../data/quiz'
 import { HistoryIllo, InstitutionsIllo, RightsIllo, ValuesIllo } from './illustrations'
 
 function Illustration({ lesson }: { lesson: Lesson }) {
@@ -49,6 +50,10 @@ export default function Learn({ onTrain }: { onTrain: (themeId: string) => void 
   const [openId, setOpenId] = useState<string | null>(null)
   const lesson = LESSONS.find((l) => l.id === openId)
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [openId])
+
   if (!lesson) {
     return (
       <section>
@@ -56,10 +61,15 @@ export default function Learn({ onTrain }: { onTrain: (themeId: string) => void 
         <p className="intro">{t('learn.intro')}</p>
         {LESSONS.map((l) => (
           <button key={l.id} className="card theme-card" onClick={() => setOpenId(l.id)}>
-            <span className="theme-title">{tr(l.title)}</span>
+            <span className="theme-head">
+              <span className="theme-icon">
+                {THEMES.find((th) => th.id === l.id)?.icon ?? '📖'}
+              </span>
+              <span className="theme-title">{tr(l.title)}</span>
+            </span>
             <span className="theme-desc">{tr(l.intro)}</span>
             <span className="theme-count">
-              {fmt(t('learn.sectionsCount'), { n: l.sections.length })} · {fmt(t('learn.videosCount'), { n: l.videos.length })}
+              {fmt(t('learn.sectionsCount'), { n: l.sections.length })} · {fmt(t('learn.videosCount'), { n: l.videos.length })} · {t('learn.read')} →
             </span>
           </button>
         ))}
