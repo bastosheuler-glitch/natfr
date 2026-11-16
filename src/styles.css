@@ -303,13 +303,55 @@ h2 {
 }
 
 .quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   text-align: left;
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: 10px;
-  padding: 0.65rem 0.9rem;
-  font-size: 0.92rem;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.95rem;
   cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+}
+
+.quiz-option:hover:not(:disabled) {
+  border-color: var(--blue);
+  background: #f4f6ff;
+}
+
+.quiz-option:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.quiz-option:disabled {
+  cursor: default;
+}
+
+.opt-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e4e4e7;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.opt-label {
+  flex: 1;
+}
+
+.opt-icon {
+  font-weight: 700;
+  font-size: 1.05rem;
 }
 
 .quiz-option.correct {
@@ -319,10 +361,67 @@ h2 {
   font-weight: 600;
 }
 
+.quiz-option.correct .opt-letter {
+  background: var(--ok);
+  color: #fff;
+}
+
 .quiz-option.wrong {
   border-color: var(--no);
   background: var(--no-bg);
   color: var(--no);
+}
+
+.quiz-option.wrong .opt-letter {
+  background: var(--no);
+  color: #fff;
+}
+
+.review {
+  margin: 1rem 0;
+}
+
+.review h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.review-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--no);
+  border-radius: 10px;
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.review-q {
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin: 0 0 0.3rem;
+}
+
+.review-a {
+  color: var(--ok);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+}
+
+.review-e {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.review-perfect {
+  text-align: center;
+  font-weight: 700;
+  color: var(--ok);
+  background: var(--ok-bg);
+  border-radius: 10px;
+  padding: 0.7rem;
+  margin: 1rem 0;
 }
 
 .explanation {
@@ -456,6 +555,65 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
+}
+
+.theme-arrow {
+  margin-left: auto;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e8edff 0%, #f5f5f7 100%);
+  border-color: #c9d4ff;
+}
+
+.hero-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.hero-steps {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.hero-steps li::marker {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.date-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.date-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+}
+
+.date-chip .date-year {
+  min-width: 0;
+  font-size: 0.95rem;
+}
+
+.date-chip .date-label {
+  font-size: 0.82rem;
+  color: var(--muted);
 }
 
 .theme-icon {
@@ -550,11 +708,16 @@ h2 {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
   font: inherit;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  padding: 0.55rem 0.75rem;
+  padding: 0.65rem 0.75rem;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .tab.active {
@@ -583,33 +746,9 @@ h2 {
   font-size: 0.93rem;
 }
 
-.key-dates {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0 1rem;
-}
-
-.key-dates li {
-  display: flex;
-  gap: 0.75rem;
-  align-items: baseline;
-  padding: 0.45rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.key-dates li:last-child {
-  border-bottom: none;
-}
-
 .date-year {
   font-weight: 700;
   color: var(--blue);
-  min-width: 6.5rem;
-  flex-shrink: 0;
-}
-
-.date-label {
-  font-size: 0.9rem;
 }
 
 .video-grid {

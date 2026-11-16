@@ -59,13 +59,27 @@ export default function Learn({ onTrain }: { onTrain: (themeId: string) => void 
       <section>
         <h2>{t('learn.title')}</h2>
         <p className="intro">{t('learn.intro')}</p>
-        {LESSONS.map((l) => (
-          <button key={l.id} className="card theme-card" onClick={() => setOpenId(l.id)}>
+        <div className="card hero">
+          <h3 className="hero-title">👋 {t('learn.howTitle')}</h3>
+          <ol className="hero-steps">
+            <li>{t('learn.step1')}</li>
+            <li>{t('learn.step2')}</li>
+            <li>{t('learn.step3')}</li>
+          </ol>
+        </div>
+        {LESSONS.map((l, i) => (
+          <button
+            key={l.id}
+            className="card theme-card"
+            style={{ animationDelay: `${i * 0.05}s` }}
+            onClick={() => setOpenId(l.id)}
+          >
             <span className="theme-head">
               <span className="theme-icon">
                 {THEMES.find((th) => th.id === l.id)?.icon ?? '📖'}
               </span>
               <span className="theme-title">{tr(l.title)}</span>
+              <span className="theme-arrow">→</span>
             </span>
             <span className="theme-desc">{tr(l.intro)}</span>
             <span className="theme-count">
@@ -97,14 +111,14 @@ export default function Learn({ onTrain }: { onTrain: (themeId: string) => void 
       ))}
 
       <h3 className="choose">{t('learn.keyDates')}</h3>
-      <ul className="key-dates">
+      <div className="date-chips">
         {lesson.keyDates.map((d, i) => (
-          <li key={i}>
+          <div key={i} className="date-chip">
             <span className="date-year">{d.year}</span>
             <span className="date-label">{tr(d.label)}</span>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
 
       {lesson.videos.length > 0 && (
         <>
