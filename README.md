@@ -1,20 +1,23 @@
 # Voie Française 🇫🇷
 
-PWA para auxiliar pessoas na naturalização francesa. Interface multilíngue (français, português, English, español).
+PWA para treinar a **entrevista de naturalização francesa**: simulado com perguntas baseadas no **livret du citoyen**, nos 4 temas oficiais. Interface multilíngue (français, português, English, español).
 
-## Funcionalidades (MVP)
+## Temas do simulado
 
-- **Simulador de elegibilidade** — questionário que avalia a priori os critérios da naturalização por decreto (residência, casamento, língua B1, renda, antecedentes, valores).
-- **Dossiê: checklist de documentos** — lista personalizada conforme sua situação (casado(a) com francês, filhos, nascido(a) no exterior), com progresso salvo no dispositivo.
-- **Preparação para a entrevista** — quiz sobre valores, história e instituições da República francesa, com explicações.
-- **Cronograma do processo** — etapas (depósito ANEF, entrevista, decreto no Journal officiel, cerimônia) com datas e prazos médios.
+- **L'histoire de France** — da Gália à Ve República (10 perguntas)
+- **Les valeurs et symboles de la République** — devise, drapeau, hymne, Marianne, laïcité (10 perguntas)
+- **Les institutions et l'Europe** — Ve République, Parlement, président, UE (10 perguntas)
+- **Les droits et devoirs du citoyen** — vote, JDC, jury d'assises, Sécurité sociale (10 perguntas)
+- **Misto (aleatório)** — 40 perguntas embaralhadas de todos os temas
+
+Cada resposta vem com uma explicação ("à retenir"). Pontuação ≥ 70 % = preparado(a).
 
 ## Stack
 
 - React 18 + TypeScript + Vite
 - PWA: `manifest.webmanifest` + service worker (funciona offline)
 - i18n próprio, sem dependências extras
-- Dados salvos localmente (`localStorage`), nada é enviado a servidores
+- Nenhum dado sai do dispositivo
 
 ## Desenvolvimento
 
@@ -27,4 +30,4 @@ npm run preview  # serve o build (service worker ativo)
 
 ## Aviso
 
-Aplicativo independente, sem valor oficial. As regras oficiais estão em [service-public.fr](https://www.service-public.fr/particuliers/vosdroits/F2213).
+Aplicativo independente, sem valor oficial. As regras oficiais estão em [service-public.fr](https://www.service-public.fr/particuliers/vosdroits/F2213) e no [livret du citoyen](https://www.service-public.fr/particuliers/vosdroits/F2437).

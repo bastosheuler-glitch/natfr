@@ -1,73 +1,98 @@
 import { useState } from 'react'
 import { fmt, useI18n } from '../i18n'
-import { QUIZ } from '../data/quiz'
+import { ALL_QUESTIONS, THEMES, shuffle, type QuizQuestion } from '../data/quiz'
+
+type Screen = 'menu' | 'quiz' | 'result'
 
 export default function Interview() {
   const { t, tr } = useI18n()
-  const [started, setStarted] = useState(false)
+  const [screen, setScreen] = useState<Screen>('menu')
+  const [questions, setQuestions] = useState<QuizQuestion[]>([])
+  const [themeTitle, setThemeTitle] = useState('')
   const [idx, setIdx] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
   const [score, setScore] = useState(0)
-  const [finished, setFinished] = useState(false)
 
-  const start = () => {
-    setStarted(true)
+  const start = (source: QuizQuestion[], title: string) => {
+    setQuestions(shuffle(source).map((q) => ({ ...q, options: shuffle(q.options) })))
+    setThemeTitle(title)
     setIdx(0)
     setSelected(null)
     setScore(0)
-    setFinished(false)
+    setScreen('quiz')
   }
-
-  if (!started) {
-    return (
-      <section>
-        <h2>{t('interview.title')}</h2>
-        <p className="intro">{t('interview.intro')}</p>
-        <div className="card center">
-          <p>{fmt(t('interview.qOf'), { n: 1, total: QUIZ.length })}</p>
-          <button className="btn primary" onClick={start}>
-            {t('interview.start')}
-          </button>
-        </div>
-      </section>
-    )
-  }
-
-  if (finished) {
-    return (
-      <section>
-        <h2>{t('interview.title')}</h2>
-        <div className={score / QUIZ.length >= 0.7 ? 'result ok' : 'result no'}>
-          <h3>{fmt(t('interview.score'), { score, total: QUIZ.length })}</h3>
-          <p>{t('common.disclaimer')}</p>
-        </div>
-        <button className="btn primary" onClick={start}>
-          {t('interview.again')}
-        </button>
-      </section>
-    )
-  }
-
-  const q = QUIZ[idx]
 
   const choose = (i: number) => {
     if (selected !== null) return
     setSelected(i)
-    if (q.options[i].correct) setScore((s) => s + 1)
+    if (questions[idx].options[i].correct) setScore((s) => s + 1)
   }
 
   const next = () => {
-    if (idx + 1 >= QUIZ.length) setFinished(true)
+    if (idx + 1 >= questions.length) setScreen('result')
     else {
       setIdx(idx + 1)
       setSelected(null)
     }
   }
 
+  if (screen === 'menu') {
+    return (
+      <section>
+        <h2>{t('interview.title')}</h2>
+        <p className="intro">{t('interview.intro')}</p>
+        <h3 className="choose">{t('interview.choose')}</h3>
+        <button className="card theme-card" onClick={() => start(ALL_QUESTIONS, t('interview.mix'))}>
+          <span className="theme-title">{t('interview.mix')}</span>
+          <span className="theme-desc">{t('interview.mixDesc')}</span>
+          <span className="theme-count">
+            {fmt(t('interview.questionsCount'), { n: ALL_QUESTIONS.length })}
+          </span>
+        </button>
+        {THEMES.map((theme) => (
+          <button
+            key={theme.id}
+            className="card theme-card"
+            onClick={() => start(theme.questions, tr(theme.title))}
+          >
+            <span className="theme-title">{tr(theme.title)}</span>
+            <span className="theme-count">
+              {fmt(t('interview.questionsCount'), { n: theme.questions.length })}
+            </span>
+          </button>
+        ))}
+      </section>
+    )
+  }
+
+  if (screen === 'result') {
+    const passed = score / questions.length >= 0.7
+    return (
+      <section>
+        <h2>{themeTitle}</h2>
+        <div className={passed ? 'result ok' : 'result no'}>
+          <h3>{fmt(t('interview.score'), { score, total: questions.length })}</h3>
+          <p>{t(passed ? 'interview.good' : 'interview.keep')}</p>
+        </div>
+        <div className="btn-row">
+          <button className="btn primary" onClick={() => start(questions, themeTitle)}>
+            {t('interview.again')}
+          </button>
+          <button className="btn" onClick={() => setScreen('menu')}>
+            {t('interview.otherTheme')}
+          </button>
+        </div>
+        <p className="note">{t('common.disclaimer')}</p>
+      </section>
+    )
+  }
+
+  const q = questions[idx]
+
   return (
     <section>
-      <h2>{t('interview.title')}</h2>
-      <p className="counter">{fmt(t('interview.qOf'), { n: idx + 1, total: QUIZ.length })}</p>
+      <h2>{themeTitle}</h2>
+      <p className="counter">{fmt(t('interview.qOf'), { n: idx + 1, total: questions.length })}</p>
       <div className="card">
         <p className="quiz-question">{tr(q.q)}</p>
         <div className="quiz-options">
@@ -86,13 +111,15 @@ export default function Interview() {
         </div>
         {selected !== null && (
           <div className="explanation">
-            <p className="feedback">{q.options[selected].correct ? t('common.correct') : t('common.wrong')}</p>
+            <p className="feedback">
+              {q.options[selected].correct ? t('common.correct') : t('common.wrong')}
+            </p>
             <p>
               <strong>{t('common.explanation')} : </strong>
               {tr(q.explanation)}
             </p>
             <button className="btn primary" onClick={next}>
-              {idx + 1 >= QUIZ.length ? t('interview.finish') : t('interview.next')}
+              {idx + 1 >= questions.length ? t('interview.finish') : t('interview.next')}
             </button>
           </div>
         )}
