@@ -377,6 +377,206 @@ export const THEMES: QuizTheme[] = [
           es: 'Victor Hugo (1802-1885), autor de Los miserables, fue un gran defensor de las libertades.',
         },
       ),
+      h(
+        {
+          fr: 'Que signifie « égalité » dans la devise de la République ?',
+          pt: 'O que significa « igualdade » no lema da República?',
+          en: 'What does “equality” mean in the Republic’s motto?',
+          es: '¿Qué significa « igualdad » en el lema de la República?',
+        },
+        [
+          { fr: 'Les mêmes droits pour tous devant la loi', pt: 'Os mesmos direitos para todos diante da lei', en: 'The same rights for all before the law', es: 'Los mismos derechos para todos ante la ley' },
+          { fr: 'Tout le monde gagne le même salaire', pt: 'Todos ganham o mesmo salário', en: 'Everyone earns the same salary', es: 'Todos ganan el mismo salario' },
+          { fr: 'Seuls les Français ont des droits', pt: 'Só os franceses têm direitos', en: 'Only French people have rights', es: 'Solo los franceses tienen derechos' },
+        ],
+        0,
+        {
+          fr: 'L’égalité veut dire que la loi est la même pour tous, sans distinction d’origine, de religion ou de sexe.',
+          pt: 'A igualdade quer dizer que a lei é a mesma para todos, sem distinção de origem, de religião ou de sexo.',
+          en: 'Equality means the law is the same for all, regardless of origin, religion or gender.',
+          es: 'La igualdad significa que la ley es la misma para todos, sin distinción de origen, de religión o de sexo.',
+        },
+      ),
+      h(
+        {
+          fr: 'Que signifie « liberté » dans la devise de la République ?',
+          pt: 'O que significa « liberdade » no lema da República?',
+          en: 'What does “liberty” mean in the Republic’s motto?',
+          es: '¿Qué significa « libertad » en el lema de la República?',
+        },
+        [
+          { fr: 'Penser, s’exprimer et agir librement dans le respect des lois', pt: 'Pensar, expressar-se e agir livremente no respeito às leis', en: 'Thinking, expressing oneself and acting freely while respecting the laws', es: 'Pensar, expresarse y actuar libremente respetando las leyes' },
+          { fr: 'Faire tout ce que l’on veut, sans limites', pt: 'Fazer tudo o que se quer, sem limites', en: 'Doing anything one wants, without limits', es: 'Hacer todo lo que se quiera, sin límites' },
+          { fr: 'Ne jamais obéir aux règles', pt: 'Nunca obedecer às regras', en: 'Never obeying rules', es: 'Nunca obedecer las reglas' },
+        ],
+        0,
+        {
+          fr: 'La liberté est protégée par la loi, mais la liberté des uns s’arrête là où commence celle des autres.',
+          pt: 'A liberdade é protegida pela lei, mas a liberdade de uns termina onde começa a dos outros.',
+          en: 'Liberty is protected by law, but one person’s freedom ends where another’s begins.',
+          es: 'La libertad está protegida por la ley, pero la libertad de unos termina donde empieza la de los otros.',
+        },
+      ),
+      h(
+        {
+          fr: 'Que fête-t-on le 11 novembre ?',
+          pt: 'O que se celebra em 11 de novembro?',
+          en: 'What is celebrated on 11 November?',
+          es: '¿Qué se celebra el 11 de noviembre?',
+        },
+        [
+          { fr: 'L’armistice de 1918, fin de la Première Guerre mondiale', pt: 'O armistício de 1918, fim da Primeira Guerra Mundial', en: 'The 1918 armistice, the end of the First World War', es: 'El armisticio de 1918, fin de la Primera Guerra Mundial' },
+          { fr: 'La prise de la Bastille', pt: 'A tomada da Bastilha', en: 'The storming of the Bastille', es: 'La toma de la Bastilla' },
+          { fr: 'L’appel du 18 juin du général de Gaulle', pt: 'O apelo de 18 de junho do general de Gaulle', en: 'General de Gaulle’s appeal of 18 June', es: 'El llamamiento del 18 de junio del general de Gaulle' },
+        ],
+        0,
+        {
+          fr: 'Le 11 novembre 1918, l’armistice met fin à la Première Guerre mondiale. C’est un jour de mémoire nationale.',
+          pt: 'Em 11 de novembro de 1918, o armistício põe fim à Primeira Guerra Mundial. É um dia de memória nacional.',
+          en: 'On 11 November 1918, the armistice ended the First World War. It is a day of national remembrance.',
+          es: 'El 11 de noviembre de 1918, el armisticio pone fin a la Primera Guerra Mundial. Es un día de memoria nacional.',
+        },
+      ),
+      h(
+        {
+          fr: 'La Marseillaise était à l’origine…',
+          pt: 'A Marselhesa era originalmente…',
+          en: 'La Marseillaise was originally…',
+          es: 'La Marsellesa era originalmente…',
+        },
+        [
+          { fr: 'Un chant de guerre de l’armée du Rhin', pt: 'Um canto de guerra do exército do Reno', en: 'A war song of the Army of the Rhine', es: 'Un canto de guerra del ejército del Rin' },
+          { fr: 'Une chanson d’amour du XVIIIe siècle', pt: 'Uma canção de amor do século XVIII', en: 'An 18th-century love song', es: 'Una canción de amor del siglo XVIII' },
+          { fr: 'Un chant créé sous Napoléon', pt: 'Um canto criado sob Napoleão', en: 'A song created under Napoleon', es: 'Un canto creado bajo Napoleón' },
+        ],
+        0,
+        {
+          fr: 'Composée en 1792 par Rouget de Lisle à Strasbourg, elle s’appelait « Chant de guerre de l’armée du Rhin ».',
+          pt: 'Composta em 1792 por Rouget de Lisle em Estrasburgo, chamava-se « Canto de guerra do exército do Reno ».',
+          en: 'Composed in 1792 by Rouget de Lisle in Strasbourg, it was called “War Song of the Army of the Rhine”.',
+          es: 'Compuesta en 1792 por Rouget de Lisle en Estrasburgo, se llamaba « Canto de guerra del ejército del Rin ».',
+        },
+      ),
+      h(
+        {
+          fr: 'Peut-on porter des signes religieux ostensibles à l’école publique ?',
+          pt: 'Pode-se usar sinais religiosos ostensivos na escola pública?',
+          en: 'Can you wear conspicuous religious signs in public school?',
+          es: '¿Se puede llevar signos religiosos ostensibles en la escuela pública?',
+        },
+        [
+          { fr: 'Non, ils sont interdits par la loi de 2004', pt: 'Não, são proibidos pela lei de 2004', en: 'No, they are banned by the 2004 law', es: 'No, están prohibidos por la ley de 2004' },
+          { fr: 'Oui, sans aucune limite', pt: 'Sim, sem nenhum limite', en: 'Yes, without any limit', es: 'Sí, sin ningún límite' },
+          { fr: 'Oui, avec l’accord du maire', pt: 'Sim, com a autorização do prefeito', en: 'Yes, with the mayor’s approval', es: 'Sí, con la autorización del alcalde' },
+        ],
+        0,
+        {
+          fr: 'La loi du 15 mars 2004 interdit les signes religieux ostensibles à l’école publique pour garantir la neutralité.',
+          pt: 'A lei de 15 de março de 2004 proíbe os sinais religiosos ostensivos na escola pública para garantir a neutralidade.',
+          en: 'The law of 15 March 2004 bans conspicuous religious signs in public schools to guarantee neutrality.',
+          es: 'La ley del 15 de marzo de 2004 prohíbe los signos religiosos ostensibles en la escuela pública para garantizar la neutralidad.',
+        },
+      ),
+      h(
+        {
+          fr: 'Comment l’article 1er de la Constitution définit-il la République ?',
+          pt: 'Como o artigo 1º da Constituição define a República?',
+          en: 'How does article 1 of the Constitution define the Republic?',
+          es: '¿Cómo define la República el artículo 1º de la Constitución?',
+        },
+        [
+          { fr: 'Indivisible, laïque, démocratique et sociale', pt: 'Indivisível, laica, democrática e social', en: 'Indivisible, secular, democratic and social', es: 'Indivisible, laica, democrática y social' },
+          { fr: 'Royale, chrétienne et rurale', pt: 'Real, cristã e rural', en: 'Royal, Christian and rural', es: 'Real, cristiana y rural' },
+          { fr: 'Fédérale, militaire et agricole', pt: 'Federal, militar e agrícola', en: 'Federal, military and agricultural', es: 'Federal, militar y agrícola' },
+        ],
+        0,
+        {
+          fr: 'Article 1er : « La France est une République indivisible, laïque, démocratique et sociale. »',
+          pt: 'Artigo 1º: « A França é uma República indivisível, laica, democrática e social. »',
+          en: 'Article 1: “France is an indivisible, secular, democratic and social Republic.”',
+          es: 'Artículo 1º: « Francia es una República indivisible, laica, democrática y social. »',
+        },
+      ),
+      h(
+        {
+          fr: 'Le 14 juillet est la fête nationale depuis…',
+          pt: 'O 14 de julho é a festa nacional desde…',
+          en: '14 July has been the national holiday since…',
+          es: 'El 14 de julio es la fiesta nacional desde…',
+        },
+        [
+          { fr: '1880', pt: '1880', en: '1880', es: '1880' },
+          { fr: '1789', pt: '1789', en: '1789', es: '1789' },
+          { fr: '1958', pt: '1958', en: '1958', es: '1958' },
+        ],
+        0,
+        {
+          fr: 'La prise de la Bastille (1789) est célébrée comme fête nationale depuis la loi du 6 juillet 1880.',
+          pt: 'A tomada da Bastilha (1789) é celebrada como festa nacional desde a lei de 6 de julho de 1880.',
+          en: 'The storming of the Bastille (1789) has been celebrated as the national holiday since the law of 6 July 1880.',
+          es: 'La toma de la Bastilla (1789) se celebra como fiesta nacional desde la ley del 6 de julio de 1880.',
+        },
+      ),
+      h(
+        {
+          fr: 'Qui a peint « La Liberté guidant le peuple » ?',
+          pt: 'Quem pintou « A Liberdade guiando o povo »?',
+          en: 'Who painted “Liberty Leading the People”?',
+          es: '¿Quién pintó « La Libertad guiando al pueblo »?',
+        },
+        [
+          { fr: 'Eugène Delacroix', pt: 'Eugène Delacroix', en: 'Eugène Delacroix', es: 'Eugène Delacroix' },
+          { fr: 'Claude Monet', pt: 'Claude Monet', en: 'Claude Monet', es: 'Claude Monet' },
+          { fr: 'Pablo Picasso', pt: 'Pablo Picasso', en: 'Pablo Picasso', es: 'Pablo Picasso' },
+        ],
+        0,
+        {
+          fr: 'Peint en 1830, ce tableau de Delacroix est exposé au Louvre : on y voit Marianne, drapeau tricolore à la main.',
+          pt: 'Pintado em 1830, este quadro de Delacroix está exposto no Louvre: vê-se Marianne, bandeira tricolor na mão.',
+          en: 'Painted in 1830, this Delacroix painting is displayed at the Louvre: it shows Marianne, tricolour flag in hand.',
+          es: 'Pintado en 1830, este cuadro de Delacroix está expuesto en el Louvre: se ve a Marianne, bandera tricolor en la mano.',
+        },
+      ),
+      h(
+        {
+          fr: 'Pourquoi l’hymne national s’appelle-t-il « la Marseillaise » ?',
+          pt: 'Por que o hino nacional se chama « a Marselhesa »?',
+          en: 'Why is the national anthem called “la Marseillaise”?',
+          es: '¿Por qué el himno nacional se llama « la Marsellesa »?',
+        },
+        [
+          { fr: 'Parce que les volontaires de Marseille l’ont chantée en montant à Paris', pt: 'Porque os voluntários de Marselha a cantaram subindo a Paris', en: 'Because the volunteers from Marseille sang it on their way to Paris', es: 'Porque los voluntarios de Marsella la cantaron subiendo a París' },
+          { fr: 'Parce qu’elle a été composée à Marseille', pt: 'Porque foi composta em Marselha', en: 'Because it was composed in Marseille', es: 'Porque fue compuesta en Marsella' },
+          { fr: 'Parce que Marianne était marseillaise', pt: 'Porque Marianne era marselhesa', en: 'Because Marianne was from Marseille', es: 'Porque Marianne era marsellesa' },
+        ],
+        0,
+        {
+          fr: 'Composée à Strasbourg, elle a été popularisée par les volontaires marseillais en 1792, d’où son nom.',
+          pt: 'Composta em Estrasburgo, foi popularizada pelos voluntários marselheses em 1792, daí o nome.',
+          en: 'Composed in Strasbourg, it was popularised by the Marseille volunteers in 1792, hence its name.',
+          es: 'Compuesta en Estrasburgo, fue popularizada por los voluntarios marselleses en 1792, de ahí su nombre.',
+        },
+      ),
+      h(
+        {
+          fr: 'Depuis quand le français est-il la langue de la République dans la Constitution ?',
+          pt: 'Desde quando o francês é a língua da República na Constituição?',
+          en: 'Since when has French been the language of the Republic in the Constitution?',
+          es: '¿Desde cuándo el francés es la lengua de la República en la Constitución?',
+        },
+        [
+          { fr: 'Depuis la révision constitutionnelle de 1992', pt: 'Desde a revisão constitucional de 1992', en: 'Since the constitutional revision of 1992', es: 'Desde la revisión constitucional de 1992' },
+          { fr: 'Depuis 1789', pt: 'Desde 1789', en: 'Since 1789', es: 'Desde 1789' },
+          { fr: 'Depuis 1539', pt: 'Desde 1539', en: 'Since 1539', es: 'Desde 1539' },
+        ],
+        0,
+        {
+          fr: 'Depuis 1992, l’article 2 de la Constitution précise : « La langue de la République est le français. »',
+          pt: 'Desde 1992, o artigo 2 da Constituição especifica: « A língua da República é o francês. »',
+          en: 'Since 1992, article 2 of the Constitution states: “The language of the Republic is French.”',
+          es: 'Desde 1992, el artículo 2 de la Constitución precisa: « La lengua de la República es el francés. »',
+        },
+      ),
     ],
   },
   {
@@ -762,6 +962,206 @@ export const THEMES: QuizTheme[] = [
           pt: 'O azul e o vermelho são as cores de Paris, o branco a da monarquia; a bandeira tricolor nasce na Revolução.',
           en: 'Blue and red are the colours of Paris, white that of the monarchy; the tricolour flag was born in the Revolution.',
           es: 'El azul y el rojo son los colores de París, el blanco el de la monarquía; la bandera tricolor nace en la Revolución.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle est la durée du mandat d’un sénateur ?',
+          pt: 'Qual é a duração do mandato de um senador?',
+          en: 'How long is a senator’s term?',
+          es: '¿Cuál es la duración del mandato de un senador?',
+        },
+        [
+          { fr: '6 ans', pt: '6 anos', en: '6 years', es: '6 años' },
+          { fr: '5 ans', pt: '5 anos', en: '5 years', es: '5 años' },
+          { fr: '4 ans', pt: '4 anos', en: '4 years', es: '4 años' },
+        ],
+        0,
+        {
+          fr: 'Les sénateurs sont élus pour 6 ans ; les députés de l’Assemblée nationale, eux, sont élus pour 5 ans.',
+          pt: 'Os senadores são eleitos por 6 anos; os deputados da Assembleia Nacional, por 5 anos.',
+          en: 'Senators are elected for 6 years; National Assembly deputies are elected for 5 years.',
+          es: 'Los senadores son elegidos por 6 años; los diputados de la Asamblea Nacional, por 5 años.',
+        },
+      ),
+      h(
+        {
+          fr: 'Comment s’appelle un texte de loi rédigé par le gouvernement ?',
+          pt: 'Como se chama um texto de lei redigido pelo governo?',
+          en: 'What is a law text drafted by the government called?',
+          es: '¿Cómo se llama un texto de ley redactado por el gobierno?',
+        },
+        [
+          { fr: 'Un projet de loi', pt: 'Um projeto de lei', en: 'A government bill', es: 'Un proyecto de ley' },
+          { fr: 'Une proposition de loi', pt: 'Uma proposição de lei', en: 'A private member’s bill', es: 'Una proposición de ley' },
+          { fr: 'Un décret royal', pt: 'Um decreto real', en: 'A royal decree', es: 'Un decreto real' },
+        ],
+        0,
+        {
+          fr: 'Un texte venant du gouvernement est un « projet de loi » ; un texte venant des parlementaires est une « proposition de loi ».',
+          pt: 'Um texto vindo do governo é um « projeto de lei »; um texto vindo dos parlamentares é uma « proposta de lei ».',
+          en: 'A text from the government is a “government bill”; a text from parliamentarians is a “private member’s bill”.',
+          es: 'Un texto del gobierno es un « proyecto de ley »; un texto de los parlamentares es una « proposición de ley ».',
+        },
+      ),
+      h(
+        {
+          fr: 'Qui applique les lois en France ?',
+          pt: 'Quem aplica as leis na França?',
+          en: 'Who applies the laws in France?',
+          es: '¿Quién aplica las leyes en Francia?',
+        },
+        [
+          { fr: 'Le gouvernement', pt: 'O governo', en: 'The government', es: 'El gobierno' },
+          { fr: 'Le Parlement', pt: 'O Parlamento', en: 'The parliament', es: 'El Parlamento' },
+          { fr: 'Le Conseil constitutionnel', pt: 'O Conselho Constitucional', en: 'The Constitutional Council', es: 'El Consejo Constitucional' },
+        ],
+        0,
+        {
+          fr: 'Le pouvoir exécutif — le président et le gouvernement — applique les lois ; le Parlement les vote.',
+          pt: 'O poder executivo — o presidente e o governo — aplica as leis; o Parlamento as vota.',
+          en: 'The executive — the president and the government — applies the laws; the parliament votes them.',
+          es: 'El poder ejecutivo — el presidente y el gobierno — aplica las leyes; el Parlamento las vota.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle est la plus haute juridiction de l’ordre judiciaire ?',
+          pt: 'Qual é a mais alta jurisdição da ordem judicial?',
+          en: 'What is the highest court of the judicial order?',
+          es: '¿Cuál es la más alta jurisdicción del orden judicial?',
+        },
+        [
+          { fr: 'La Cour de cassation', pt: 'A Corte de Cassação', en: 'The Cour de cassation', es: 'La Corte de Casación' },
+          { fr: 'Le Conseil d’État', pt: 'O Conselho de Estado', en: 'The Conseil d’État', es: 'El Consejo de Estado' },
+          { fr: 'Le tribunal de commerce', pt: 'O tribunal de comércio', en: 'The commercial court', es: 'El tribunal de comercio' },
+        ],
+        0,
+        {
+          fr: 'La Cour de cassation est au sommet de l’ordre judiciaire ; le Conseil d’État est au sommet de l’ordre administratif.',
+          pt: 'A Corte de Cassação está no topo da ordem judicial; o Conselho de Estado está no topo da ordem administrativa.',
+          en: 'The Cour de cassation tops the judicial order; the Conseil d’État tops the administrative order.',
+          es: 'La Corte de Casación está en la cima del orden judicial; el Consejo de Estado está en la cima del orden administrativo.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle institution contrôle les finances publiques ?',
+          pt: 'Qual instituição controla as finanças públicas?',
+          en: 'Which institution audits public finances?',
+          es: '¿Qué institución controla las finanzas públicas?',
+        },
+        [
+          { fr: 'La Cour des comptes', pt: 'A Corte de Contas', en: 'The Cour des comptes', es: 'La Corte de Cuentas' },
+          { fr: 'La Banque de France', pt: 'O Banco da França', en: 'The Bank of France', es: 'El Banco de Francia' },
+          { fr: 'L’Assemblée nationale', pt: 'A Assembleia Nacional', en: 'The National Assembly', es: 'La Asamblea Nacional' },
+        ],
+        0,
+        {
+          fr: 'La Cour des comptes vérifie que l’argent public est bien utilisé ; elle est l’« arbitre des comptes publics ».',
+          pt: 'A Corte de Contas verifica que o dinheiro público é bem usado; é a « árbitra das contas públicas ».',
+          en: 'The Cour des comptes checks that public money is well spent; it is the “arbiter of public accounts”.',
+          es: 'La Corte de Cuentas verifica que el dinero público se usa bien; es la « árbitra de las cuentas públicas ».',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle est la capitale de la France ?',
+          pt: 'Qual é a capital da França?',
+          en: 'What is the capital of France?',
+          es: '¿Cuál es la capital de Francia?',
+        },
+        [
+          { fr: 'Paris', pt: 'Paris', en: 'Paris', es: 'París' },
+          { fr: 'Lyon', pt: 'Lyon', en: 'Lyon', es: 'Lyon' },
+          { fr: 'Marseille', pt: 'Marselha', en: 'Marseille', es: 'Marsella' },
+        ],
+        0,
+        {
+          fr: 'Paris est la capitale de la France : c’est là que se trouvent l’Élysée, l’Assemblée nationale et le Sénat.',
+          pt: 'Paris é a capital da França: é lá que ficam o Eliseu, a Assembleia Nacional e o Senado.',
+          en: 'Paris is the capital of France: the Élysée, the National Assembly and the Senate are there.',
+          es: 'París es la capital de Francia: allí están el Elíseo, la Asamblea Nacional y el Senado.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quel pays est voisin de la France ?',
+          pt: 'Qual país é vizinho da França?',
+          en: 'Which country is a neighbour of France?',
+          es: '¿Qué país es vecino de Francia?',
+        },
+        [
+          { fr: 'L’Allemagne', pt: 'A Alemanha', en: 'Germany', es: 'Alemania' },
+          { fr: 'L’Espagne', pt: 'A Espanha', en: 'Spain', es: 'España' },
+          { fr: 'L’Italie', pt: 'A Itália', en: 'Italy', es: 'Italia' },
+        ],
+        0,
+        {
+          fr: 'La France a 8 pays voisins : Belgique, Luxembourg, Allemagne, Suisse, Italie, Monaco, Espagne et Andorre.',
+          pt: 'A França tem 8 países vizinhos: Bélgica, Luxemburgo, Alemanha, Suíça, Itália, Mônaco, Espanha e Andorra.',
+          en: 'France has 8 neighbouring countries: Belgium, Luxembourg, Germany, Switzerland, Italy, Monaco, Spain and Andorra.',
+          es: 'Francia tiene 8 países vecinos: Bélgica, Luxemburgo, Alemania, Suiza, Italia, Mónaco, España y Andorra.',
+        },
+      ),
+      h(
+        {
+          fr: 'Combien d’États membres compte l’Union européenne aujourd’hui ?',
+          pt: 'Quantos Estados-membros tem hoje a União Europeia?',
+          en: 'How many member states does the European Union have today?',
+          es: '¿Cuántos Estados miembros tiene hoy la Unión Europea?',
+        },
+        [
+          { fr: '27, depuis le départ du Royaume-Uni en 2020', pt: '27, desde a saída do Reino Unido em 2020', en: '27, since the UK’s departure in 2020', es: '27, desde la salida del Reino Unido en 2020' },
+          { fr: '6, comme à la création', pt: '6, como na criação', en: '6, as at the founding', es: '6, como en la fundación' },
+          { fr: '50', pt: '50', en: '50', es: '50' },
+        ],
+        0,
+        {
+          fr: 'Depuis le Brexit (2020), l’UE compte 27 États membres. La France est un de ses membres fondateurs.',
+          pt: 'Desde o Brexit (2020), a UE conta 27 Estados-membros. A França é um de seus membros fundadores.',
+          en: 'Since Brexit (2020), the EU has 27 member states. France is one of its founding members.',
+          es: 'Desde el Brexit (2020), la UE cuenta con 27 Estados miembros. Francia es uno de sus miembros fundadores.',
+        },
+      ),
+      h(
+        {
+          fr: 'Combien de départements compte la France en métropole ?',
+          pt: 'Quantos departamentos tem a França na metrópole?',
+          en: 'How many départements are there in mainland France?',
+          es: '¿Cuántos departamentos tiene Francia en la metrópoli?',
+        },
+        [
+          { fr: '96 (101 avec l’outre-mer)', pt: '96 (101 com o ultramar)', en: '96 (101 with overseas territories)', es: '96 (101 con el ultramar)' },
+          { fr: '18', pt: '18', en: '18', es: '18' },
+          { fr: '35 000', pt: '35 000', en: '35,000', es: '35 000' },
+        ],
+        0,
+        {
+          fr: 'Il y a 96 départements en métropole et 101 avec l’outre-mer. Les 35 000 sont les communes ; les 18, les régions.',
+          pt: 'Há 96 departamentos na metrópole e 101 com o ultramar. Os 35 000 são as comunas; as 18, as regiões.',
+          en: 'There are 96 départements in mainland France and 101 with overseas territories. The 35,000 are the communes; the 18, the regions.',
+          es: 'Hay 96 departamentos en la metrópoli y 101 con el ultramar. Los 35 000 son las comunas; las 18, las regiones.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle mer borde la France au sud ?',
+          pt: 'Qual mar banha a França ao sul?',
+          en: 'Which sea borders France to the south?',
+          es: '¿Qué mar baña Francia al sur?',
+        },
+        [
+          { fr: 'La Méditerranée', pt: 'O Mediterrâneo', en: 'The Mediterranean', es: 'El Mediterráneo' },
+          { fr: 'La mer du Nord', pt: 'O Mar do Norte', en: 'The North Sea', es: 'El mar del Norte' },
+          { fr: 'La mer Baltique', pt: 'O Mar Báltico', en: 'The Baltic Sea', es: 'El mar Báltico' },
+        ],
+        0,
+        {
+          fr: 'Au sud, la France est bordée par la Méditerranée ; à l’ouest, par l’océan Atlantique et la Manche ; au nord, par la Manche et la mer du Nord.',
+          pt: 'Ao sul, a França é banhada pelo Mediterrâneo; a oeste, pelo oceano Atlântico; ao norte, pelo canal da Mancha e o Mar do Norte.',
+          en: 'To the south, France is bordered by the Mediterranean; to the west, by the Atlantic Ocean; to the north, by the Channel and the North Sea.',
+          es: 'Al sur, Francia es bañada por el Mediterráneo; al oeste, por el océano Atlántico; al norte, por el canal de la Mancha y el mar del Norte.',
         },
       ),
     ],
@@ -1154,6 +1554,206 @@ export const THEMES: QuizTheme[] = [
           pt: 'A Constituição de 4 de outubro de 1958 organiza os poderes da V República.',
           en: 'The Constitution of 4 October 1958 organises the powers of the Fifth Republic.',
           es: 'La Constitución del 4 de octubre de 1958 organiza los poderes de la V República.',
+        },
+      ),
+      h(
+        {
+          fr: 'Le vote est-il obligatoire en France ?',
+          pt: 'O voto é obrigatório na França?',
+          en: 'Is voting compulsory in France?',
+          es: '¿El voto es obligatorio en Francia?',
+        },
+        [
+          { fr: 'Non, le vote est un droit', pt: 'Não, o voto é um direito', en: 'No, voting is a right', es: 'No, el voto es un derecho' },
+          { fr: 'Oui, pour toutes les élections', pt: 'Sim, para todas as eleições', en: 'Yes, for all elections', es: 'Sí, para todas las elecciones' },
+          { fr: 'Oui, mais seulement pour la présidentielle', pt: 'Sim, mas só para a presidencial', en: 'Yes, but only for the presidential election', es: 'Sí, pero solo para la presidencial' },
+        ],
+        0,
+        {
+          fr: 'Le vote est un droit, pas une obligation : personne n’est puni s’il ne vote pas.',
+          pt: 'O voto é um direito, não uma obrigação: ninguém é punido se não votar.',
+          en: 'Voting is a right, not an obligation: no one is punished for not voting.',
+          es: 'El voto es un derecho, no una obligación: nadie es castigado si no vota.',
+        },
+      ),
+      h(
+        {
+          fr: 'À quoi servent les impôts ?',
+          pt: 'Para que servem os impostos?',
+          en: 'What are taxes used for?',
+          es: '¿Para qué sirven los impuestos?',
+        },
+        [
+          { fr: 'À financer les services publics', pt: 'Para financiar os serviços públicos', en: 'To finance public services', es: 'Para financiar los servicios públicos' },
+          { fr: 'À financer les partis politiques uniquement', pt: 'Para financiar somente os partidos políticos', en: 'To finance political parties only', es: 'Para financiar solo los partidos políticos' },
+          { fr: 'À rien, ils sont thésaurisés', pt: 'Para nada, são acumulados', en: 'Nothing, they are hoarded', es: 'Para nada, se acumulan' },
+        ],
+        0,
+        {
+          fr: 'Les impôts financent les services publics : écoles, hôpitaux, police, routes, justice.',
+          pt: 'Os impostos financiam os serviços públicos: escolas, hospitais, polícia, estradas, justiça.',
+          en: 'Taxes finance public services: schools, hospitals, police, roads, justice.',
+          es: 'Los impuestos financian los servicios públicos: escuelas, hospitales, policía, carreteras, justicia.',
+        },
+      ),
+      h(
+        {
+          fr: 'Les urgences hospitalières sont-elles ouvertes à tous ?',
+          pt: 'As urgências hospitalares estão abertas a todos?',
+          en: 'Are hospital emergency rooms open to everyone?',
+          es: '¿Las urgencias hospitalarias están abiertas a todos?',
+        },
+        [
+          { fr: 'Oui, même sans argent', pt: 'Sim, mesmo sem dinheiro', en: 'Yes, even without money', es: 'Sí, incluso sin dinero' },
+          { fr: 'Non, seulement avec une carte Vitale', pt: 'Não, somente com o cartão Vitale', en: 'No, only with a Vitale card', es: 'No, solo con la tarjeta Vitale' },
+          { fr: 'Non, seulement pour les Français', pt: 'Não, somente para os franceses', en: 'No, only for French people', es: 'No, solo para los franceses' },
+        ],
+        0,
+        {
+          fr: 'Personne n’est refusé aux urgences, même sans argent : c’est un principe de la République sociale.',
+          pt: 'Ninguém é recusado nas urgências, mesmo sem dinheiro: é um princípio da República social.',
+          en: 'No one is refused at the emergency room, even without money: it is a principle of the social Republic.',
+          es: 'Nadie es rechazado en las urgencias, incluso sin dinero: es un principio de la República social.',
+        },
+      ),
+      h(
+        {
+          fr: 'La liberté d’expression est-elle sans limite ?',
+          pt: 'A liberdade de expressão é sem limites?',
+          en: 'Is freedom of expression unlimited?',
+          es: '¿La libertad de expresión es ilimitada?',
+        },
+        [
+          { fr: 'Non, la loi fixe des limites', pt: 'Não, a lei fixa limites', en: 'No, the law sets limits', es: 'No, la ley fija límites' },
+          { fr: 'Oui, tout est permis', pt: 'Sim, tudo é permitido', en: 'Yes, anything goes', es: 'Sí, todo está permitido' },
+          { fr: 'Oui, sauf à l’étranger', pt: 'Sim, exceto no exterior', en: 'Yes, except abroad', es: 'Sí, excepto en el extranjero' },
+        ],
+        0,
+        {
+          fr: 'La diffamation, l’incitation à la haine et le négationnisme sont interdits : la loi fixe les limites de la liberté d’expression.',
+          pt: 'A difamação, a incitação ao ódio e a negação do Holocausto são proibidos: a lei fixa os limites da liberdade de expressão.',
+          en: 'Defamation, incitement to hatred and Holocaust denial are banned: the law sets the limits of free speech.',
+          es: 'La difamación, la incitación al odio y la negación del Holocausto están prohibidos: la ley fija los límites de la libertad de expresión.',
+        },
+      ),
+      h(
+        {
+          fr: 'Peut-on contester une décision de l’administration ?',
+          pt: 'Pode-se contestar uma decisão da administração?',
+          en: 'Can you contest a decision of the administration?',
+          es: '¿Se puede impugnar una decisión de la administración?',
+        },
+        [
+          { fr: 'Oui, devant le tribunal administratif', pt: 'Sim, diante do tribunal administrativo', en: 'Yes, before the administrative court', es: 'Sí, ante el tribunal administrativo' },
+          { fr: 'Non, l’administration a toujours raison', pt: 'Não, a administração sempre tem razão', en: 'No, the administration is always right', es: 'No, la administración siempre tiene razón' },
+          { fr: 'Oui, mais uniquement par la grève', pt: 'Sim, mas apenas pela greve', en: 'Yes, but only by striking', es: 'Sí, pero solo por la huelga' },
+        ],
+        0,
+        {
+          fr: 'Toute décision défavorable peut être contestée, d’abord par un recours gracieux, puis devant le tribunal administratif.',
+          pt: 'Qualquer decisão desfavorável pode ser contestada, primeiro por um recurso administrativo, depois diante do tribunal administrativo.',
+          en: 'Any unfavourable decision can be contested, first through an informal appeal, then before the administrative court.',
+          es: 'Cualquier decisión desfavorable puede ser impugnada, primero por un recurso administrativo, luego ante el tribunal administrativo.',
+        },
+      ),
+      h(
+        {
+          fr: 'Qui peut se marier à la mairie ?',
+          pt: 'Quem pode se casar na prefeitura?',
+          en: 'Who can marry at the town hall?',
+          es: '¿Quién puede casarse en el ayuntamiento?',
+        },
+        [
+          { fr: 'Toute personne majeure, y compris les couples de même sexe depuis 2013', pt: 'Toda pessoa maior de idade, incluindo casais do mesmo sexo desde 2013', en: 'Any adult, including same-sex couples since 2013', es: 'Toda persona mayor de edad, incluidas las parejas del mismo sexo desde 2013' },
+          { fr: 'Uniquement les couples homme-femme', pt: 'Apenas casais homem-mulher', en: 'Only man-woman couples', es: 'Solo parejas hombre-mujer' },
+          { fr: 'Uniquement les personnes nées en France', pt: 'Apenas pessoas nascidas na França', en: 'Only people born in France', es: 'Solo personas nacidas en Francia' },
+        ],
+        0,
+        {
+          fr: 'Le mariage civil, célébré à la mairie, est ouvert à tous ; depuis la loi de 2013, les couples de même sexe peuvent se marier.',
+          pt: 'O casamento civil, celebrado na prefeitura, está aberto a todos; desde a lei de 2013, casais do mesmo sexo podem se casar.',
+          en: 'Civil marriage, held at the town hall, is open to all; since the 2013 law, same-sex couples can marry.',
+          es: 'El matrimonio civil, celebrado en el ayuntamiento, está abierto a todos; desde la ley de 2013, las parejas del mismo sexo pueden casarse.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle aide l’État verse-t-il aux familles ?',
+          pt: 'Que ajuda o Estado paga às famílias?',
+          en: 'What support does the state pay to families?',
+          es: '¿Qué ayuda paga el Estado a las familias?',
+        },
+        [
+          { fr: 'Les allocations familiales, versées par la CAF', pt: 'Os auxílios familiares, pagos pela CAF', en: 'Family benefits, paid by the CAF', es: 'Las ayudas familiares, pagadas por la CAF' },
+          { fr: 'Aucune aide', pt: 'Nenhuma ajuda', en: 'No support', es: 'Ninguna ayuda' },
+          { fr: 'Des aides uniquement pour les entreprises', pt: 'Ajuda apenas para empresas', en: 'Support only for companies', es: 'Ayuda solo para empresas' },
+        ],
+        0,
+        {
+          fr: 'La CAF (Caisse d’allocations familiales) verse les allocations familiales et les aides au logement.',
+          pt: 'A CAF (Caisse d’allocations familiales) paga os auxílios familiares e os auxílios à moradia.',
+          en: 'The CAF (Caisse d’allocations familiales) pays family benefits and housing aid.',
+          es: 'La CAF (Caisse d’allocations familiales) paga las ayudas familiares y las ayudas a la vivienda.',
+        },
+      ),
+      h(
+        {
+          fr: 'À quoi sert la carte d’électeur ?',
+          pt: 'Para que serve o cartão de eleitor?',
+          en: 'What is the voter card for?',
+          es: '¿Para qué sirve la tarjeta electoral?',
+        },
+        [
+          { fr: 'À prouver son inscription sur les listes et voter', pt: 'Provar a inscrição nas listas e votar', en: 'Proving registration on the lists and voting', es: 'Probar la inscripción en las listas y votar' },
+          { fr: 'À voyager dans l’UE', pt: 'Viajar na UE', en: 'Travelling in the EU', es: 'Viajar en la UE' },
+          { fr: 'À payer ses impôts', pt: 'Pagar os impostos', en: 'Paying taxes', es: 'Pagar los impuestos' },
+        ],
+        0,
+        {
+          fr: 'La carte d’électeur prouve que l’on est inscrit sur les listes électorales ; elle facilite le vote le jour du scrutin.',
+          pt: 'O cartão de eleitor prova que se está inscrito nas listas eleitorais; facilita o voto no dia da eleição.',
+          en: 'The voter card proves registration on the electoral lists; it makes voting easier on election day.',
+          es: 'La tarjeta electoral prueba que se está inscrito en las listas electorales; facilita el voto el día de la elección.',
+        },
+      ),
+      h(
+        {
+          fr: 'Le service militaire est-il obligatoire en France ?',
+          pt: 'O serviço militar é obrigatório na França?',
+          en: 'Is military service compulsory in France?',
+          es: '¿El servicio militar es obligatorio en Francia?',
+        },
+        [
+          { fr: 'Non, il a été suspendu en 1997', pt: 'Não, foi suspenso em 1997', en: 'No, it was suspended in 1997', es: 'No, fue suspendido en 1997' },
+          { fr: 'Oui, pour tous les hommes', pt: 'Sim, para todos os homens', en: 'Yes, for all men', es: 'Sí, para todos los hombres' },
+          { fr: 'Oui, d’un an minimum', pt: 'Sim, de um ano no mínimo', en: 'Yes, one year minimum', es: 'Sí, de un año como mínimo' },
+        ],
+        0,
+        {
+          fr: 'Le service militaire obligatoire a été suspendu en 1997. Il reste la JDC (Journée défense et citoyenneté) après le recensement à 16 ans.',
+          pt: 'O serviço militar obrigatório foi suspenso em 1997. Resta a JDC (Jornada de Defesa e Cidadania) após o registro aos 16 anos.',
+          en: 'Compulsory military service was suspended in 1997. The JDC (Defence and Citizenship Day) remains, after registration at 16.',
+          es: 'El servicio militar obligatorio fue suspendido en 1997. Queda la JDC (Jornada de Defensa y Ciudadanía) tras el registro a los 16 años.',
+        },
+      ),
+      h(
+        {
+          fr: 'L’école publique française est…',
+          pt: 'A escola pública francesa é…',
+          en: 'The French public school is…',
+          es: 'La escuela pública francesa es…',
+        },
+        [
+          { fr: 'Gratuite, laïque et obligatoire de 3 à 16 ans', pt: 'Gratuita, laica e obrigatória dos 3 aos 16 anos', en: 'Free, secular and compulsory from 3 to 16', es: 'Gratuita, laica y obligatoria de 3 a 16 años' },
+          { fr: 'Payante et facultative', pt: 'Paga e facultativa', en: 'Paid and optional', es: 'De pago y opcional' },
+          { fr: 'Réservée aux enfants français', pt: 'Reservada a crianças francesas', en: 'Reserved for French children', es: 'Reservada a niños franceses' },
+        ],
+        0,
+        {
+          fr: 'L’école publique est gratuite, laïque et obligatoire de 3 à 16 ans : chaque enfant doit être scolarisé.',
+          pt: 'A escola pública é gratuita, laica e obrigatória dos 3 aos 16 anos: cada criança deve estar escolarizada.',
+          en: 'Public school is free, secular and compulsory from 3 to 16: every child must be schooled.',
+          es: 'La escuela pública es gratuita, laica y obligatoria de 3 a 16 años: cada niño debe estar escolarizado.',
         },
       ),
     ],
@@ -1556,6 +2156,206 @@ export const THEMES: QuizTheme[] = [
           pt: 'A igualdade entre mulheres e homens é um princípio garantido pela Constituição e pelas leis.',
           en: 'Equality between women and men is a principle guaranteed by the Constitution and the laws.',
           es: 'La igualdad entre mujeres y hombres es un principio garantizado por la Constitución y las leyes.',
+        },
+      ),
+      h(
+        {
+          fr: 'Le vote est-il obligatoire en France ?',
+          pt: 'O voto é obrigatório na França?',
+          en: 'Is voting compulsory in France?',
+          es: '¿El voto es obligatorio en Francia?',
+        },
+        [
+          { fr: 'Non, le vote est un droit', pt: 'Não, o voto é um direito', en: 'No, voting is a right', es: 'No, el voto es un derecho' },
+          { fr: 'Oui, pour toutes les élections', pt: 'Sim, para todas as eleições', en: 'Yes, for all elections', es: 'Sí, para todas las elecciones' },
+          { fr: 'Oui, mais seulement pour la présidentielle', pt: 'Sim, mas só para a presidencial', en: 'Yes, but only for the presidential election', es: 'Sí, pero solo para la presidencial' },
+        ],
+        0,
+        {
+          fr: 'Le vote est un droit, pas une obligation : personne n’est puni s’il ne vote pas.',
+          pt: 'O voto é um direito, não uma obrigação: ninguém é punido se não votar.',
+          en: 'Voting is a right, not an obligation: no one is punished for not voting.',
+          es: 'El voto es un derecho, no una obligación: nadie es castigado si no vota.',
+        },
+      ),
+      h(
+        {
+          fr: 'À quoi servent les impôts ?',
+          pt: 'Para que servem os impostos?',
+          en: 'What are taxes used for?',
+          es: '¿Para qué sirven los impuestos?',
+        },
+        [
+          { fr: 'À financer les services publics', pt: 'Para financiar os serviços públicos', en: 'To finance public services', es: 'Para financiar los servicios públicos' },
+          { fr: 'À financer les partis politiques uniquement', pt: 'Para financiar somente os partidos políticos', en: 'To finance political parties only', es: 'Para financiar solo los partidos políticos' },
+          { fr: 'À rien, ils sont thésaurisés', pt: 'Para nada, são acumulados', en: 'Nothing, they are hoarded', es: 'Para nada, se acumulan' },
+        ],
+        0,
+        {
+          fr: 'Les impôts financent les services publics : écoles, hôpitaux, police, routes, justice.',
+          pt: 'Os impostos financiam os serviços públicos: escolas, hospitais, polícia, estradas, justiça.',
+          en: 'Taxes finance public services: schools, hospitals, police, roads, justice.',
+          es: 'Los impuestos financian los servicios públicos: escuelas, hospitales, policía, carreteras, justicia.',
+        },
+      ),
+      h(
+        {
+          fr: 'Les urgences hospitalières sont-elles ouvertes à tous ?',
+          pt: 'As urgências hospitalares estão abertas a todos?',
+          en: 'Are hospital emergency rooms open to everyone?',
+          es: '¿Las urgencias hospitalarias están abiertas a todos?',
+        },
+        [
+          { fr: 'Oui, même sans argent', pt: 'Sim, mesmo sem dinheiro', en: 'Yes, even without money', es: 'Sí, incluso sin dinero' },
+          { fr: 'Non, seulement avec une carte Vitale', pt: 'Não, somente com o cartão Vitale', en: 'No, only with a Vitale card', es: 'No, solo con la tarjeta Vitale' },
+          { fr: 'Non, seulement pour les Français', pt: 'Não, somente para os franceses', en: 'No, only for French people', es: 'No, solo para los franceses' },
+        ],
+        0,
+        {
+          fr: 'Personne n’est refusé aux urgences, même sans argent : c’est un principe de la République sociale.',
+          pt: 'Ninguém é recusado nas urgências, mesmo sem dinheiro: é um princípio da República social.',
+          en: 'No one is refused at the emergency room, even without money: it is a principle of the social Republic.',
+          es: 'Nadie es rechazado en las urgencias, incluso sin dinero: es un principio de la República social.',
+        },
+      ),
+      h(
+        {
+          fr: 'La liberté d’expression est-elle sans limite ?',
+          pt: 'A liberdade de expressão é sem limites?',
+          en: 'Is freedom of expression unlimited?',
+          es: '¿La libertad de expresión es ilimitada?',
+        },
+        [
+          { fr: 'Non, la loi fixe des limites', pt: 'Não, a lei fixa limites', en: 'No, the law sets limits', es: 'No, la ley fija límites' },
+          { fr: 'Oui, tout est permis', pt: 'Sim, tudo é permitido', en: 'Yes, anything goes', es: 'Sí, todo está permitido' },
+          { fr: 'Oui, sauf à l’étranger', pt: 'Sim, exceto no exterior', en: 'Yes, except abroad', es: 'Sí, excepto en el extranjero' },
+        ],
+        0,
+        {
+          fr: 'La diffamation, l’incitation à la haine et le négationnisme sont interdits : la loi fixe les limites de la liberté d’expression.',
+          pt: 'A difamação, a incitação ao ódio e a negação do Holocausto são proibidos: a lei fixa os limites da liberdade de expressão.',
+          en: 'Defamation, incitement to hatred and Holocaust denial are banned: the law sets the limits of free speech.',
+          es: 'La difamación, la incitación al odio y la negación del Holocausto están prohibidos: la ley fija los límites de la libertad de expresión.',
+        },
+      ),
+      h(
+        {
+          fr: 'Peut-on contester une décision de l’administration ?',
+          pt: 'Pode-se contestar uma decisão da administração?',
+          en: 'Can you contest a decision of the administration?',
+          es: '¿Se puede impugnar una decisión de la administración?',
+        },
+        [
+          { fr: 'Oui, devant le tribunal administratif', pt: 'Sim, diante do tribunal administrativo', en: 'Yes, before the administrative court', es: 'Sí, ante el tribunal administrativo' },
+          { fr: 'Non, l’administration a toujours raison', pt: 'Não, a administração sempre tem razão', en: 'No, the administration is always right', es: 'No, la administración siempre tiene razón' },
+          { fr: 'Oui, mais uniquement par la grève', pt: 'Sim, mas apenas pela greve', en: 'Yes, but only by striking', es: 'Sí, pero solo por la huelga' },
+        ],
+        0,
+        {
+          fr: 'Toute décision défavorable peut être contestée, d’abord par un recours gracieux, puis devant le tribunal administratif.',
+          pt: 'Qualquer decisão desfavorável pode ser contestada, primeiro por um recurso administrativo, depois diante do tribunal administrativo.',
+          en: 'Any unfavourable decision can be contested, first through an informal appeal, then before the administrative court.',
+          es: 'Cualquier decisión desfavorable puede ser impugnada, primero por un recurso administrativo, luego ante el tribunal administrativo.',
+        },
+      ),
+      h(
+        {
+          fr: 'Qui peut se marier à la mairie ?',
+          pt: 'Quem pode se casar na prefeitura?',
+          en: 'Who can marry at the town hall?',
+          es: '¿Quién puede casarse en el ayuntamiento?',
+        },
+        [
+          { fr: 'Toute personne majeure, y compris les couples de même sexe depuis 2013', pt: 'Toda pessoa maior de idade, incluindo casais do mesmo sexo desde 2013', en: 'Any adult, including same-sex couples since 2013', es: 'Toda persona mayor de edad, incluidas las parejas del mismo sexo desde 2013' },
+          { fr: 'Uniquement les couples homme-femme', pt: 'Apenas casais homem-mulher', en: 'Only man-woman couples', es: 'Solo parejas hombre-mujer' },
+          { fr: 'Uniquement les personnes nées en France', pt: 'Apenas pessoas nascidas na França', en: 'Only people born in France', es: 'Solo personas nacidas en Francia' },
+        ],
+        0,
+        {
+          fr: 'Le mariage civil, célébré à la mairie, est ouvert à tous ; depuis la loi de 2013, les couples de même sexe peuvent se marier.',
+          pt: 'O casamento civil, celebrado na prefeitura, está aberto a todos; desde a lei de 2013, casais do mesmo sexo podem se casar.',
+          en: 'Civil marriage, held at the town hall, is open to all; since the 2013 law, same-sex couples can marry.',
+          es: 'El matrimonio civil, celebrado en el ayuntamiento, está abierto a todos; desde la ley de 2013, las parejas del mismo sexo pueden casarse.',
+        },
+      ),
+      h(
+        {
+          fr: 'Quelle aide l’État verse-t-il aux familles ?',
+          pt: 'Que ajuda o Estado paga às famílias?',
+          en: 'What support does the state pay to families?',
+          es: '¿Qué ayuda paga el Estado a las familias?',
+        },
+        [
+          { fr: 'Les allocations familiales, versées par la CAF', pt: 'Os auxílios familiares, pagos pela CAF', en: 'Family benefits, paid by the CAF', es: 'Las ayudas familiares, pagadas por la CAF' },
+          { fr: 'Aucune aide', pt: 'Nenhuma ajuda', en: 'No support', es: 'Ninguna ayuda' },
+          { fr: 'Des aides uniquement pour les entreprises', pt: 'Ajuda apenas para empresas', en: 'Support only for companies', es: 'Ayuda solo para empresas' },
+        ],
+        0,
+        {
+          fr: 'La CAF (Caisse d’allocations familiales) verse les allocations familiales et les aides au logement.',
+          pt: 'A CAF (Caisse d’allocations familiales) paga os auxílios familiares e os auxílios à moradia.',
+          en: 'The CAF (Caisse d’allocations familiales) pays family benefits and housing aid.',
+          es: 'La CAF (Caisse d’allocations familiales) paga las ayudas familiares y las ayudas a la vivienda.',
+        },
+      ),
+      h(
+        {
+          fr: 'À quoi sert la carte d’électeur ?',
+          pt: 'Para que serve o cartão de eleitor?',
+          en: 'What is the voter card for?',
+          es: '¿Para qué sirve la tarjeta electoral?',
+        },
+        [
+          { fr: 'À prouver son inscription sur les listes et voter', pt: 'Provar a inscrição nas listas e votar', en: 'Proving registration on the lists and voting', es: 'Probar la inscripción en las listas y votar' },
+          { fr: 'À voyager dans l’UE', pt: 'Viajar na UE', en: 'Travelling in the EU', es: 'Viajar en la UE' },
+          { fr: 'À payer ses impôts', pt: 'Pagar os impostos', en: 'Paying taxes', es: 'Pagar los impuestos' },
+        ],
+        0,
+        {
+          fr: 'La carte d’électeur prouve que l’on est inscrit sur les listes électorales ; elle facilite le vote le jour du scrutin.',
+          pt: 'O cartão de eleitor prova que se está inscrito nas listas eleitorais; facilita o voto no dia da eleição.',
+          en: 'The voter card proves registration on the electoral lists; it makes voting easier on election day.',
+          es: 'La tarjeta electoral prueba que se está inscrito en las listas electorales; facilita el voto el día de la elección.',
+        },
+      ),
+      h(
+        {
+          fr: 'Le service militaire est-il obligatoire en France ?',
+          pt: 'O serviço militar é obrigatório na França?',
+          en: 'Is military service compulsory in France?',
+          es: '¿El servicio militar es obligatorio en Francia?',
+        },
+        [
+          { fr: 'Non, il a été suspendu en 1997', pt: 'Não, foi suspenso em 1997', en: 'No, it was suspended in 1997', es: 'No, fue suspendido en 1997' },
+          { fr: 'Oui, pour tous les hommes', pt: 'Sim, para todos os homens', en: 'Yes, for all men', es: 'Sí, para todos los hombres' },
+          { fr: 'Oui, d’un an minimum', pt: 'Sim, de um ano no mínimo', en: 'Yes, one year minimum', es: 'Sí, de un año como mínimo' },
+        ],
+        0,
+        {
+          fr: 'Le service militaire obligatoire a été suspendu en 1997. Il reste la JDC (Journée défense et citoyenneté) après le recensement à 16 ans.',
+          pt: 'O serviço militar obrigatório foi suspenso em 1997. Resta a JDC (Jornada de Defesa e Cidadania) após o registro aos 16 anos.',
+          en: 'Compulsory military service was suspended in 1997. The JDC (Defence and Citizenship Day) remains, after registration at 16.',
+          es: 'El servicio militar obligatorio fue suspendido en 1997. Queda la JDC (Jornada de Defensa y Ciudadanía) tras el registro a los 16 años.',
+        },
+      ),
+      h(
+        {
+          fr: 'L’école publique française est…',
+          pt: 'A escola pública francesa é…',
+          en: 'The French public school is…',
+          es: 'La escuela pública francesa es…',
+        },
+        [
+          { fr: 'Gratuite, laïque et obligatoire de 3 à 16 ans', pt: 'Gratuita, laica e obrigatória dos 3 aos 16 anos', en: 'Free, secular and compulsory from 3 to 16', es: 'Gratuita, laica y obligatoria de 3 a 16 años' },
+          { fr: 'Payante et facultative', pt: 'Paga e facultativa', en: 'Paid and optional', es: 'De pago y opcional' },
+          { fr: 'Réservée aux enfants français', pt: 'Reservada a crianças francesas', en: 'Reserved for French children', es: 'Reservada a niños franceses' },
+        ],
+        0,
+        {
+          fr: 'L’école publique est gratuite, laïque et obligatoire de 3 à 16 ans : chaque enfant doit être scolarisé.',
+          pt: 'A escola pública é gratuita, laica e obrigatória dos 3 aos 16 anos: cada criança deve estar escolarizada.',
+          en: 'Public school is free, secular and compulsory from 3 to 16: every child must be schooled.',
+          es: 'La escuela pública es gratuita, laica y obligatoria de 3 a 16 años: cada niño debe estar escolarizado.',
         },
       ),
     ],
