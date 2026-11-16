@@ -1,6 +1,10 @@
 # Voie Française 🇫🇷
 
-PWA para treinar a **entrevista de naturalização francesa**: simulado com perguntas baseadas no **livret du citoyen**, nos 4 temas oficiais. Interface multilíngue (français, português, English, español).
+PWA para treinar a **entrevista de naturalização francesa**: seção de aprendizado baseada no **livret du citoyen** (textos, ilustrações e pequenos vídeos) e simulado com perguntas nos 4 temas oficiais. Interface multilíngue (français, português, English, español).
+
+## Aprender
+
+Cada tema tem uma lição com texto em 4 idiomas, ilustrações (linha do tempo, símbolos, diagrama das instituições, grid de direitos), datas-chave e pequenos vídeos educacionais ("1 jour, 1 question", via YouTube — exigem internet). No fim de cada lição, um botão leva direto ao simulado do tema.
 
 ## Temas do simulado
 

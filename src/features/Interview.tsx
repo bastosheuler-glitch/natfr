@@ -1,10 +1,15 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { fmt, useI18n } from '../i18n'
 import { ALL_QUESTIONS, THEMES, shuffle, type QuizQuestion } from '../data/quiz'
 
 type Screen = 'menu' | 'quiz' | 'result'
 
-export default function Interview() {
+interface InterviewProps {
+  pendingTheme: string | null
+  onConsume: () => void
+}
+
+export default function Interview({ pendingTheme, onConsume }: InterviewProps) {
   const { t, tr } = useI18n()
   const [screen, setScreen] = useState<Screen>('menu')
   const [questions, setQuestions] = useState<QuizQuestion[]>([])
@@ -21,6 +26,14 @@ export default function Interview() {
     setScore(0)
     setScreen('quiz')
   }
+
+  useEffect(() => {
+    if (!pendingTheme) return
+    const theme = THEMES.find((th) => th.id === pendingTheme)
+    if (theme) start(theme.questions, tr(theme.title))
+    onConsume()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pendingTheme])
 
   const choose = (i: number) => {
     if (selected !== null) return

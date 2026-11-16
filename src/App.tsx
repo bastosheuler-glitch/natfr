@@ -1,8 +1,19 @@
+import { useState } from 'react'
 import { I18nProvider, LANGS, useI18n } from './i18n'
 import Interview from './features/Interview'
+import Learn from './features/Learn'
+
+type Tab = 'learn' | 'quiz'
 
 function Shell() {
   const { lang, setLang, t } = useI18n()
+  const [tab, setTab] = useState<Tab>('learn')
+  const [pendingTheme, setPendingTheme] = useState<string | null>(null)
+
+  const trainTheme = (themeId: string) => {
+    setPendingTheme(themeId)
+    setTab('quiz')
+  }
 
   return (
     <div className="app">
@@ -26,9 +37,27 @@ function Shell() {
             </select>
           </label>
         </div>
+        <nav className="tabbar">
+          <button
+            className={tab === 'learn' ? 'tab active' : 'tab'}
+            onClick={() => setTab('learn')}
+          >
+            {t('nav.learn')}
+          </button>
+          <button
+            className={tab === 'quiz' ? 'tab active' : 'tab'}
+            onClick={() => setTab('quiz')}
+          >
+            {t('nav.quiz')}
+          </button>
+        </nav>
       </header>
       <main className="content">
-        <Interview />
+        {tab === 'learn' ? (
+          <Learn onTrain={trainTheme} />
+        ) : (
+          <Interview pendingTheme={pendingTheme} onConsume={() => setPendingTheme(null)} />
+        )}
       </main>
       <footer className="app-footer">
         <p>{t('footer.disclaimer')}</p>
