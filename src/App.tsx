@@ -42,13 +42,13 @@ function Shell() {
             className={tab === 'learn' ? 'tab active' : 'tab'}
             onClick={() => setTab('learn')}
           >
-            {t('nav.learn')}
+            📖 {t('nav.learn')}
           </button>
           <button
             className={tab === 'quiz' ? 'tab active' : 'tab'}
             onClick={() => setTab('quiz')}
           >
-            {t('nav.quiz')}
+            🎯 {t('nav.quiz')}
           </button>
         </nav>
       </header>
