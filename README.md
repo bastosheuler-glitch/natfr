@@ -8,11 +8,11 @@ Cada tema tem uma lição com texto em 4 idiomas, ilustrações (linha do tempo,
 
 ## Temas do simulado
 
-- **L'histoire de France** — da Gália à Ve República (10 perguntas)
-- **Les valeurs et symboles de la République** — devise, drapeau, hymne, Marianne, laïcité (10 perguntas)
-- **Les institutions et l'Europe** — Ve République, Parlement, président, UE (10 perguntas)
-- **Les droits et devoirs du citoyen** — vote, JDC, jury d'assises, Sécurité sociale (10 perguntas)
-- **Misto (aleatório)** — 40 perguntas embaralhadas de todos os temas
+- **L'histoire de France** — da Gália à Ve République (25 perguntas)
+- **Les valeurs et symboles de la République** — devise, drapeau, hymne, Marianne, laïcité (25 perguntas)
+- **Les institutions et l'Europe** — Ve République, Parlement, président, UE (25 perguntas)
+- **Les droits et devoirs du citoyen** — vote, JDC, jury d'assises, Sécurité sociale (24 perguntas)
+- **Misto (aleatório)** — 99 perguntas embaralhadas de todos os temas
 
 Cada resposta vem com uma explicação ("à retenir"). Pontuação ≥ 70 % = preparado(a).
 

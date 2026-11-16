@@ -106,7 +106,9 @@ export default function Learn({ onTrain }: { onTrain: (themeId: string) => void 
       {lesson.sections.map((s, i) => (
         <div key={i} className="lesson-section">
           <h3>{tr(s.title)}</h3>
-          <p>{tr(s.text)}</p>
+          {tr(s.text).split('\n\n').map((p, j) => (
+            <p key={j}>{p}</p>
+          ))}
         </div>
       ))}
 
